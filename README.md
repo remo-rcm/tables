@@ -1,2 +1,2 @@
 # remo tables
-tables with data and meta info for the remo model
+machine readable tables with data and meta info for the remo model.
