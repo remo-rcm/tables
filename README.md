@@ -11,16 +11,16 @@ table = pd.read_csv('https://raw.githubusercontent.com/remo-rcm/tables/master/co
 
 ```
 
-## domain tables
+## code-list
+
+The Remo code table which describes most common Remo variables and code identifiers.
+
+## domains
 
 Domain tables following the Cordex standard. Note, that domains for the REMO model are slightly larger
 than the official Cordex domains to account for the nudging zone.
 
-## code table
-
-The Remo code table which describes most common Remo variables and code identifiers.
-
-## vc tables
+## vc
 
 Tables of terrain-following vertical hybrid sigma pressure coordinates that define model levels for Remo.
 To compute the pressure at a model level, the surface pressure is required (e.g., `ps`). The pressure at a
