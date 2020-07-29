@@ -1,4 +1,4 @@
-code,variable,description,unit,layer,time_cell_method,cf_name
+code,variable,description,units,layer,time_cell_method,cf_name
 470,FLTMWAT,mean temperature of the water column,[K],1,mean,
 471,FLTMIX,mixed-layer temperature,[K],1,mean,
 472,FLTWBSED,temperature at the water-bottom sediment interface,[K],1,mean,
