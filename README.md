@@ -3,7 +3,6 @@ machine readable tables with data and meta info for the remo model.
 
 You can read these tables directly using, e.g.,
 
-
 ```python
 import pandas as pd
 
