@@ -1,0 +1,92 @@
+namelist,parameter,description
+parctl,nprocxm,the number of cpus in x-direction
+parctl,nprocym,the number of cpus in y-direction
+emgrid,moie,number of gridpoints in x-direction
+emgrid,moje,number of gridpoints in y-direction
+emgrid,moke,number of vertical levels
+emgrid,philu,latitude of the lower left corner (center of grid box of lower left corner)
+emgrid,rlalu,longitude of the lower left corner (center of grid box of lower left corner)
+emgrid,polphi,latitude of the rotated north pole
+emgrid,pollam,longitude of the rotated north pole
+emgrid,dlam,meshsize in x-direction (degree)
+emgrid,dphi,meshsize in y-direction (degree)
+runctl,nheaa,timestep for the first output for hourly output of the ground 2-d fields
+runctl,nhdea,interval for hourly output of the ground 2-d fields
+runctl,nhtaa,timestep for the first output for 6-hour output of the atmospheric 3-d fields
+runctl,nhdta,interval for 6-hour output of the atmospheric 3-d fields
+runctl,nhdmxn,time period after which accumulated and mean output variables are set to zero (should be equal to nhdea)
+runctl,nhdr,interval for boundary data update
+runctl,nsa,number of hours after reference date before the calculation of the month
+runctl,nse,number of hours after reference date after the calculation of the month
+runctl,lmomon,use .true. for model calender (every month 30 days)
+runctl,yo3dcat,enable aerosols and other atmospheric chemistry stuff - if you want to include their computation
+runctl,yo3dnam,enable aerosols and other atmospheric chemistry stuff - if you want to include their computation
+runctl,ysadcat,enable aerosols and other atmospheric chemistry stuff - if you want to include their computation
+runctl,ysadnam,you need to prepare the fields for your specific domain by yourself otherwise just skip them (mostly done)
+runctl,ysndcat,you need to prepare the fields for your specific domain by yourself otherwise just skip them (mostly done)
+runctl,ysndnam,you need to prepare the fields for your specific domain by yourself otherwise just skip them (mostly done)
+runctl,nhanf,starting hour relative to yadat
+runctl,nhende,ending hour relative to yadat
+runctl,yadat,starting date
+runctl,nheaa,write out the first 'xe' file after nheaa hours
+runctl,nhdea,write out 'xe' every nhdea hours
+runctl,nhfora,write out of 'xf' and 'xg' files after nhfora hours (restartfiles)
+runctl,nhdfor,
+runctl,nhtaa,write out the first 'xt' file after nhtaa hours
+runctl,nhdta,write out 'xt' every nhdtaa hours
+runctl,nhdaa,
+runctl,nhdda,
+runctl,nhdmxn,output interval (nhdmxn=nheaa=nhdea is recommended)
+runctl,dt,time step
+runctl,nhdr,input interval of boundary files
+runctl,lqwr,liquid water content in boundary files
+phyctl,lphy,
+phyctl,hdrad,full calculation of radiation (in hours)
+phyctl,iexc,
+phyctl,lakku,
+phyctl,lnear,
+phyctl,lveg,
+phyctl,linbox,calculation of horizontal transport of energy and moisture (var 96-100) but should be switched off due to wrong calculations
+phyctl,lsiced,.true.: takes sea ice depth from input .false.: calculates sea ice depth from sst (var 211)
+phyctl,laeroz,
+phyctl,lecgad,
+phyctl,l5lay,5 layer soil
+phyctl,lcoldc,
+phyctl,ladvpr,rain advection
+phyctl,leccov,convection
+chem,lchem,switch: chemistry on/off (default: false)
+chem,nhchemini,hour in which the chemistry-calculation is started (useful for calculating met-spinup without chemistry (default=0)
+chem,nupbdy,number of levels (from the top) to be updated by global boundary data (default: 5)
+chem,ycheuse,user number of chemistry boundary files
+chem,ycheexp,experiment number of chemistry boundary files
+chem,ycheda,path to chemistry boundary files
+chem,ychede,path to chemistry emission files
+chem,ychedr,path to chemistry restart files
+chem,ychewe,path to writing out chemistry output
+chem,ycemuse,user number of chemistry emission files
+chem,ycemexp,experiment number of chemistry emission files
+chem,ychedo,path to other needed chemistry files
+chem,ycheland,name of the landuse data file (must be in ychedo!)
+chem,ychephot,name of the photolysis data file (must be in ychedo!)
+nmictl,lanmi,true: with adiabatic normal mode initialization [default]  false: ???
+nmictl,dtnmi,timestep for normal mode initialization (first timestep) (ask ralf) (most probably 1/6 of normal timestep)
+prictl,ldia,
+daten,yaden,experiment number of the input data
+daten,yrden,experiment number of the input data (yaden=yrden is recommended)
+daten,yeden,experiment number of the 'xe' files
+daten,yfden,experiment number of the 'xf' files
+daten,ytden,experiment number of the 'xt' files
+daten,yusera,user number of the input data
+daten,yusere,user number of the output files
+daten,yadcat,path to the input files
+daten,yrdcat,path to the input files
+daten,yedcat,path to the 'xe' files
+daten,yfdcat,path to the 'xf' files
+daten,ytdcat,path to the 'xt' files
+daten,ymdcat,
+daten,yndcat,
+daten,ytdcat,
+daten,ybdcat,path to the files below
+daten,ybdnam,list of three files describing the yearly vegetation cycle
+daten,ygdcat,path to ghg-file
+daten,ygdnam,ghg-filename
