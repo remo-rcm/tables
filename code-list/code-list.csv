@@ -10,8 +10,8 @@ code,variable,description,units,layer,time_cell_method,cf_name
 9,FMPOT,Matrix potential,m,1,,
 10,BCLAPP,Exponent b in Clapp and Hornberger,,1,,
 11,VPOR,Volumetric soil porosity,m/m,1,,
-12,ETRANS,transpiration at the surface,mm,1,,
-13,EBSOIL,Bare soil evaporation at the surface,mm,1,,
+12,ETRANS,transpiration at the surface,mm,1,,tran
+13,EBSOIL,Bare soil evaporation at the surface,mm,1,,evspsblsoi
 14,FTKVM,turbulent transfer coefficient of momentum in the atmosphere,,109,,
 15,FTKVH,turbulent transfer coefficient of heat in the atmosphere,,109,,
 16,TGLAC1,GLACIER: Temperature of upper ice layer,K,1,,
@@ -122,19 +122,19 @@ code,variable,description,units,layer,time_cell_method,cf_name
 136,,,,1,,
 137,,,,1,,
 138,,,,1,,
-139,TS,surface temperature (mean over gridbox),K,1,,
+139,TS,surface temperature (mean over gridbox),K,1,,ts
 140,WS,soil wetness,m,1,,mrso
 141,SN,snow depth,m,1,,snw
 142,APRL,large scale precipitation,mm,1,,
 143,APRC,convective precipitation,mm,1,,prc
-144,APRS,snow fall,mm,1,,
+144,APRS,snow fall,mm,1,,prsn
 145,VDIS,boundary layer dissipation (accumulated),W/m²,1,,
-146,AHFS,surface sensible heat flux,W/m²,1,,
-147,AHFL,surface latent heat flux,W/m²,1,,
+146,AHFS,surface sensible heat flux,W/m²,1,,hfss
+147,AHFL,surface latent heat flux,W/m²,1,,hfls
 148,,,,1,,
 149,,,,1,,
 150,,,,1,,
-151,PSRED,mean sea level pressure,Pa,1,,
+151,PSRED,mean sea level pressure,Pa,1,,psl
 152,,,,1,,
 153,QW,liquid water content,kg/kg,110,,
 154,,,,1,,
@@ -147,7 +147,7 @@ code,variable,description,units,layer,time_cell_method,cf_name
 161,,,,1,,
 162,ACLC,cloud cover (see also 223),fract.,110,,
 163,ACLCV,total cloud cover (see also 164),fract.,1,,
-164,ACLCOV,total cloud cover,fract.,1,,
+164,ACLCOV,total cloud cover,fract.,1,,clt
 165,U10,10m u-velocity,m/s,1,,uas
 166,V10,10m v-velocity,m/s,1,,vas
 167,TEMP2,2m temperature,K,1,,tas
@@ -158,13 +158,13 @@ code,variable,description,units,layer,time_cell_method,cf_name
 172,BLA,land sea mask,fract.,1,,sftlf
 173,AZ0,surface roughness length,m,1,,
 174,ALB,surface background albedo,fract.,1,,
-175,ALBEDO,surface albedo,fract.,1,,
-176,SRADS,net surface solar radiation,W/m²,1,,
-177,TRADS,net surface thermal radiation,W/m²,1,,
-178,SRAD0,net top solar radiation,W/m²,1,,
-179,TRAD0,top thermal radiation (OLR),W/m²,1,,
-180,USTR,surface u-stress,Pa,1,,
-181,VSTR,surface v-stress,Pa,1,,
+175,ALBEDO,surface albedo,fract.,1,,albedo
+176,SRADS,net surface solar radiation,W/m²,1,,rsntds
+177,TRADS,net surface thermal radiation,W/m²,1,,rlntds
+178,SRAD0,net top solar radiation,W/m²,1,,rsntdt
+179,TRAD0,top thermal radiation (OLR),W/m²,1,,rlut
+180,USTR,surface u-stress,Pa,1,,tauu
+181,VSTR,surface v-stress,Pa,1,,tauv
 182,EVAP,surface evaporation,mm,1,,evspsbl
 183,TDCL,soil temperature 5.700m thickness,K,1,,
 184,,,,1,,
@@ -173,9 +173,9 @@ code,variable,description,units,layer,time_cell_method,cf_name
 187,SRAF0,net top solar radiation (clear sky),W/m²,1,,
 188,TRAF0,net top thermal radiation (clear sky),W/m²,1,,
 189,SCLFS,surface solar cloud forcing,W/m²,1,,
-190,TCLFS,surface thermal cloud forcing,W/m²,1,,
+190,TCLFS,surface thermal cloud forcing,W/m²,1,,tcflfs
 191,SCLF0,top solar cloud forcing,W/m²,1,,
-192,TCLF0,top thermal cloud forcing,W/m²,1,,
+192,TCLF0,top thermal cloud forcing,W/m²,1,,tcflft
 193,,,,1,,
 194,WL,skin reservoir content,m,1,,
 195,USTRGW,u-gravity wave stress,Pa,1,,
@@ -186,7 +186,7 @@ code,variable,description,units,layer,time_cell_method,cf_name
 200,VLT,leaf area index,m²/m²,1,,
 201,T2MAX,maximum 2m-temperature,K,1,,tasmax
 202,T2MIN,minimum 2m-temperature,K,1,,tasmin
-203,SRAD0U,top solar radiation upward,W/m²,1,,
+203,SRAD0U,top solar radiation upward,W/m²,1,,rsut
 204,SRADSU,surface solar radiation upward,W/m²,1,,rsus
 205,TRADSU,surface thermal radiation upward,W/m²,1,,rlus
 206,TSN,snow temperature (see description below),K,1,,
@@ -201,20 +201,20 @@ code,variable,description,units,layer,time_cell_method,cf_name
 215,TSMIN,minimum surface temperature,K,1,,
 216,WIMAX,maximum 10m-wind speed (w/o gusts),m/s,1,,sfcWindmax
 217,TOPMAX,maximum height of convective cloud tops,Pa,1,,
-218,SNMEL,snow melt,mm,1,,
+218,SNMEL,snow melt,mm,1,,snm
 219,,,,1,,
 220,TSLIN,land: residual surface heat budget sea-ice: conductive heat flux,W/m²,1,,
 221,DSNAC,snow depth change,mm,1,,
 222,EMTER,effective emissivity,,1,,
-223,ACLCAC,cloud cover,fract.,110,,
+223,ACLCAC,cloud cover,fract.,110,,clh
 224,TKE,turbulent kinetic energy,,110,,
 225,,,,1,,
 226,FAO,FAO data set (soil data flags),0...6.,1,,
 227,RGCGN,heat capacity of soil,,1,,
 228,,,,1,,
 229,WSMX,field capacity of soil,m³/m³,1,,
-230,QVI,vertically integrated specific humidity,kg/m²,1,,
-231,ALWCVI,vertically integrated liquid water cont.,kg/m²,1,,
+230,QVI,vertically integrated specific humidity,kg/m²,1,,prw
+231,ALWCVI,vertically integrated liquid water cont.,kg/m²,1,,clwvi
 232,GLAC,glacier mask (0.: no,1.: yes),1,,
 233,,,,1,,
 234,EVAPM,surface evaporation,mm,1,,
@@ -227,16 +227,16 @@ code,variable,description,units,layer,time_cell_method,cf_name
 257,TRADSGO,GLACIER: Surface outgoing thermal radiation on glaciated fraction,W/m²,1,,
 258,AHFLG,GLACIER: Latent heat flux on glaciated fraction (VDIFF),W/m²,1,,
 259,GLDLAST,GLACIER: Ice thickness after last area adjustment (IGLAAM=2),m w.e.,1,,
-260,APRT,Total Precipitation,mm,1,,
+260,APRT,Total Precipitation,mm,1,,pr
 261,AHUM2,2m absolute humidity,kg/m**3,1,,
 262,SRADG,global radiation,W/m**2,1,,
-265,U10ER,10m u-velocity,m/s,1,,
-266,V10ER,10m v-velocity,m/s,1,,
-271,GHPBL,height of the planetary boundary layer,m,1,,
+265,U10ER,10m u-velocity,m/s,1,,uas
+266,V10ER,10m v-velocity,m/s,1,,vas
+271,GHPBL,height of the planetary boundary layer,m,1,,zmla
 272,BETA,,,1,,
 273,WMINLOK,,,1,,
 274,WMAXLOK,,,1,,
-275,VBM10M,maximum of the expected gust velocity near the surface,m/s,1,,
+275,VBM10M,maximum of the expected gust velocity near the surface,m/s,1,,wsgsmax
 276,CAPE,convective available potential energy,J/kg,1,,
 281,PINT,non-hydrostatic pressure,,110,,
 282,DWDT,non-hydrostatic acceleration,,110,,
@@ -256,9 +256,9 @@ code,variable,description,units,layer,time_cell_method,cf_name
 318,VPWP,volumetric soil permanent wilting point,m/m,1,,
 319,SPSI,soil pore size distribution index, ,1,,
 334,QI,cloud ice,kg/kg,110,,
-336,QIVI,vertically integrated cloud ice,kg/m²,1,,
+336,QIVI,vertically integrated cloud ice,kg/m²,1,,clivi
 337,QIBOXS,horizontal transport of cloud ice,kg/m²,1,,
-416,QDB2,2m specific humidity,kg/kg,1,,
+416,QDB2,2m specific humidity,kg/kg,1,,huss
 417,VAP2,2m vapour pressure,Pa,1,,
 432,PTEMP,potential temperature (not an output variable),K,110,,
 433,RPR,warm cloud rain production,?,110,,
@@ -274,7 +274,7 @@ code,variable,description,units,layer,time_cell_method,cf_name
 443,FRLAC,,,110,,
 444,SPRAC,,,110,,
 446,WINDDIR,wind direction in 10m,°,1,,
-447,RELHUM2,relative humidity in 2m,%,1,,
+447,RELHUM2,relative humidity in 2m,%,1,,hurs
 448,SACL1AC,,,110,,
 449,SACL2AC,,,110,,
 450,RAC1AC,,,110,,
@@ -300,6 +300,6 @@ code,variable,description,units,layer,time_cell_method,cf_name
 496,RAIN,rain water content,kg/kg,1,,
 497,SNOW,snow content,kg/kg,1,,
 498,WIND100,100m windspeed,m/s,1,,
-499,SUNDUR,sunshine duration,h,1,,
+499,SUNDUR,sunshine duration,h,1,,sund
 614,PHI,latitude in real coordinates,deg. N,1,,
 615,RLA,longitude in real coordinates,deg. E,1,,

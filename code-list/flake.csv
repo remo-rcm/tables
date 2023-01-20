@@ -4,7 +4,7 @@ code,variable,description,units,layer,time_cell_method,cf_name
 472,FLTWBSED,temperature at the water-bottom sediment interface,K,1,mean,
 473,FLTULSED,temperature at the bottom of the upper layer of the sediments,K,1,mean,
 474,FLSHF,shape factor (thermocline),,1,mean,
-475,FLHSN,snow thickness,m,1,mean,
+475,FLHSN,snow thickness,m,1,mean,snd
 476,FLHICE,ice thickness,m,1,mean,
 477,FLHMIX,thickness of the mixed-layer,m,1,mean,
 478,FLHULBS,thickness of the upper layer of bottom sediments,m,1,mean,
