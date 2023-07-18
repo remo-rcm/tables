@@ -104,6 +104,6 @@
 # - Vertical grid for ECHAM6 simulations including the
 #   troposphere, stratosphere and mesosphere.
 # - Resolves atmosphere from surface to 1 Pa (0.01 mbar).
-# - Includes mass of the whole atmosphere: ptop=0. 
+# - Includes mass of the whole atmosphere: ptop=0.
 # References:
 # - n.a.
