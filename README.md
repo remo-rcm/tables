@@ -1,4 +1,8 @@
 # remo tables
+
+[![CI](https://github.com/remo-rcm/tables/actions/workflows/ci.yaml/badge.svg)](https://github.com/remo-rcm/tables/actions/workflows/ci.yaml)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/remo-rcm/tables/main.svg)](https://results.pre-commit.ci/latest/github/remo-rcm/tables/main)
+
 machine readable tables with data and meta info for the remo model.
 
 You can read these tables directly using, e.g.,
