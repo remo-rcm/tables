@@ -113,9 +113,9 @@ code,variable,description,units,layer,time_cell_method,cf_name
 127,SNMDL,GLACIER: Mean snow depth on non-glaciated fraction during SNAGEL,m w.e.,1,,
 128,SNMDG,GLACIER: Mean snow depth on glaciated fraction during SNAGEG,m w.e.,1,,
 129,FIB,surface geopotential (orography),m,1,,orog
-130,T,temperature,K,110,,
-131,U,u-velocity,m/s,110,,
-132,V,v-velocity,m/s,110,,
+130,T,temperature,K,110,,ta
+131,U,u-velocity,m/s,110,,ua
+132,V,v-velocity,m/s,110,,va
 133,QD,specific humidity,kg/kg,110,,hus
 134,PS,Surface pressure,Pa,1,,ps
 135,OMEGA,Vertical velocity,Pa/s,110,,
