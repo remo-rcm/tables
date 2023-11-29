@@ -300,6 +300,6 @@ code,variable,description,units,layer,time_cell_method,cf_name
 496,RAIN,rain water content,kg/kg,1,,
 497,SNOW,snow content,kg/kg,1,,
 498,WIND100,100m windspeed,m/s,1,,
-499,SUNDUR,sunshine duration,h,1,,sund
+571,SUND,sunshine duration,h,1,,sund
 614,PHI,latitude in real coordinates,deg. N,1,,
 615,RLA,longitude in real coordinates,deg. E,1,,
