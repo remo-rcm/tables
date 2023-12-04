@@ -62,9 +62,9 @@ code,variable,description,units,layer,time_cell_method,cf_name
 72,AZ0L,surface roughness length (land),m,1,,
 73,AZ0W,surface roughness length (water),m,1,,
 74,AZ0I,surface roughness length (ice),m,1,,
-75,ALSOL,surface albedo (land),fract.,1,,
-76,ALSOW,surface albedo (water),fract.,1,,
-77,ALSOI,surface albedo (ice),fract.,1,,
+75,ALSOL,surface albedo (land),dimensionless,1,,
+76,ALSOW,surface albedo (water),dimensionless,1,,
+77,ALSOI,surface albedo (ice),dimensionless,1,,
 81,TMCHL,turbulent transfer coefficient of heat at the surface (land),,1,,
 82,TMCHW,turbulent transfer coefficient of heat at the surface (water),,1,,
 83,TMCHI,turbulent transfer coefficient of heat at the surface (ice),,1,,
@@ -145,9 +145,9 @@ code,variable,description,units,layer,time_cell_method,cf_name
 159,USTAR3,TKE for ocean mixed layer (accumulated),(m**3/s**3)*s,1,,
 160,RUNOFF,total runoff (surface runoff PLUS drainage !!),mm,1,,mrro
 161,,,,1,,
-162,ACLC,cloud cover (see also 223),fract.,110,,
-163,ACLCV,total cloud cover (see also 164),fract.,1,,
-164,ACLCOV,total cloud cover,fract.,1,,clt
+162,ACLC,cloud cover (see also 223),dimensionless,110,,
+163,ACLCV,total cloud cover (see also 164),dimensionless,1,,
+164,ACLCOV,total cloud cover,dimensionless,1,,clt
 165,U10,10m u-velocity,m/s,1,,uas
 166,V10,10m v-velocity,m/s,1,,vas
 167,TEMP2,2m temperature,K,1,,tas
@@ -155,10 +155,10 @@ code,variable,description,units,layer,time_cell_method,cf_name
 169,TSURF,surface temperature (land) (see also 54),K,1,,
 170,TD,deep soil temperature,K,1,,
 171,WIND10,10m windspeed,m/s,1,,sfcWind
-172,BLA,land sea mask,fract.,1,,sftlf
+172,BLA,land sea mask,dimensionless,1,,sftlf
 173,AZ0,surface roughness length,m,1,,
-174,ALB,surface background albedo,fract.,1,,
-175,ALBEDO,surface albedo,fract.,1,,albedo
+174,ALB,surface background albedo,dimensionless,1,,
+175,ALBEDO,surface albedo,dimensionless,1,,albedo
 176,SRADS,net surface solar radiation,W/m²,1,,rsntds
 177,TRADS,net surface thermal radiation,W/m²,1,,rlntds
 178,SRAD0,net top solar radiation,W/m²,1,,rsntdt
@@ -193,7 +193,7 @@ code,variable,description,units,layer,time_cell_method,cf_name
 207,TD3,soil temperature 0.065m thickness,K,1,,
 208,TD4,soil temperature 0.254m thickness,K,1,,
 209,TD5,soil temperature 0.913m thickness,K,1,,
-210,SEAICE,sea ice cover,fract.,1,,
+210,SEAICE,sea ice cover,dimensionless,1,,
 211,SICED,sea ice depth,m,1,,
 212,FOREST,vegetation type,,1,,
 213,TEFF,(effective) sea-ice skin temperature,K,1,,
@@ -206,7 +206,7 @@ code,variable,description,units,layer,time_cell_method,cf_name
 220,TSLIN,land: residual surface heat budget sea-ice: conductive heat flux,W/m²,1,,
 221,DSNAC,snow depth change,mm,1,,
 222,EMTER,effective emissivity,,1,,
-223,ACLCAC,cloud cover,fract.,110,,clh
+223,ACLCAC,cloud cover,dimensionless,110,,clh
 224,TKE,turbulent kinetic energy,,110,,
 225,,,,1,,
 226,FAO,FAO data set (soil data flags),0...6.,1,,
