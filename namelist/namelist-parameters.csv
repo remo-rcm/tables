@@ -37,7 +37,7 @@ runctl,ysndnam,you need to prepare the fields for your specific domain by yourse
 runctl,dt,model's calculation time step (in seconds)
 runctl,lmomon,use .true. for model calender (every month 30 days)
 runctl,lqwr,.true.: if liquid water content in boundary files
-phyctl,lphy,.true.: prognose with full physic 
+phyctl,lphy,.true.: prognose with full physic
 phyctl,hdrad,full calculation of radiation (in hours)
 phyctl,iexc,number of soil moisture model (=1 for standard arno-scheme, =5 for improved arno-scheme, =7 for old remo simularcrum arno-scheme)
 phyctl,lakku,.true.: sum of precipitation .false. no sum of precipitation
