@@ -10,50 +10,48 @@ emgrid,polphi,latitude of the rotated north pole
 emgrid,pollam,longitude of the rotated north pole
 emgrid,dlam,meshsize in x-direction (degree)
 emgrid,dphi,meshsize in y-direction (degree)
-runctl,nheaa,timestep for the first output for hourly output of the ground 2-d fields
-runctl,nhdea,interval for hourly output of the ground 2-d fields
-runctl,nhtaa,timestep for the first output for 6-hour output of the atmospheric 3-d fields
-runctl,nhdta,interval for 6-hour output of the atmospheric 3-d fields
-runctl,nhdmxn,time period after which accumulated and mean output variables are set to zero (should be equal to nhdea)
-runctl,nhdr,interval for boundary data update
+runctl,nhanf,starting hour relative to yadat
+runctl,nhende,ending hour relative to yadat
+runctl,yadat,starting date (format: YYYYMMDDHH)
+runctl,nheaa,timestep for the first output for output of the ground 2-d fields (write out the first 'xe' file after nheaa hours)
+runctl,nhdea,interval for output of the ground 2-d fields (write out 'xe' files every nhdea hours)
+runctl,nhfora,write out of 'xf' and 'xg' files after nhfora hours (restartfiles)
+runctl,nhdfor,
+runctl,nhtaa,write out the first 'xt' file after nhtaa hours
+runctl,nhdta,write out 'xt' every nhdtaa hours
+runctl,nhtaa,timestep (in hours) for the first output for output of the atmospheric 3-d fields (write out the first 'xt' file after nhtaa hours)
+runctl,nhdta,interval (in hours) for output of the atmospheric 3-d fields (write out 'xt' files every nhdta hours)
+runctl,nhdmxn,time period (in hours) after which accumulated and mean output variables are set to zero (should be equal to nhdea)
+runctl,nhdr,interval (in hours) for boundary data update
+runctl,nhdaa,
+runctl,nhdda,
+runctl,nhdmxn,output interval (nhdmxn=nheaa=nhdea is recommended)
 runctl,nsa,number of hours after reference date before the calculation of the month
 runctl,nse,number of hours after reference date after the calculation of the month
-runctl,lmomon,use .true. for model calender (every month 30 days)
 runctl,yo3dcat,enable aerosols and other atmospheric chemistry stuff - if you want to include their computation
 runctl,yo3dnam,enable aerosols and other atmospheric chemistry stuff - if you want to include their computation
 runctl,ysadcat,enable aerosols and other atmospheric chemistry stuff - if you want to include their computation
 runctl,ysadnam,you need to prepare the fields for your specific domain by yourself otherwise just skip them (mostly done)
 runctl,ysndcat,you need to prepare the fields for your specific domain by yourself otherwise just skip them (mostly done)
 runctl,ysndnam,you need to prepare the fields for your specific domain by yourself otherwise just skip them (mostly done)
-runctl,nhanf,starting hour relative to yadat
-runctl,nhende,ending hour relative to yadat
-runctl,yadat,starting date
-runctl,nheaa,write out the first 'xe' file after nheaa hours
-runctl,nhdea,write out 'xe' every nhdea hours
-runctl,nhfora,write out of 'xf' and 'xg' files after nhfora hours (restartfiles)
-runctl,nhdfor,
-runctl,nhtaa,write out the first 'xt' file after nhtaa hours
-runctl,nhdta,write out 'xt' every nhdtaa hours
-runctl,nhdaa,
-runctl,nhdda,
-runctl,nhdmxn,output interval (nhdmxn=nheaa=nhdea is recommended)
-runctl,dt,time step
-runctl,nhdr,input interval of boundary files
-runctl,lqwr,liquid water content in boundary files
-phyctl,lphy,
+runctl,dt,model's calculation time step (in seconds)
+runctl,lmomon,use .true. for model calender (every month 30 days)
+runctl,lqwr,.true.: if liquid water content in boundary files
+phyctl,lphy,.true.: prognose with full physic
 phyctl,hdrad,full calculation of radiation (in hours)
-phyctl,iexc,
-phyctl,lakku,
-phyctl,lnear,
-phyctl,lveg,
-phyctl,linbox,calculation of horizontal transport of energy and moisture (var 96-100) but should be switched off due to wrong calculations
+phyctl,iexc,number of soil moisture model (=1 for standard arno-scheme, =5 for improved arno-scheme, =7 for old remo simularcrum arno-scheme)
+phyctl,lakku,.true.: sum of precipitation .false. no sum of precipitation
+phyctl,lnear,.true.: use nearec4 subroutine
+phyctl,lveg,.true.: use variable vegetation
+phyctl,linbox,.true.: calculation of horizontal transport of energy and moisture (var 96-100) but should be switched off due to wrong calculations
 phyctl,lsiced,.true.: takes sea ice depth from input .false.: calculates sea ice depth from sst (var 211)
-phyctl,laeroz,
-phyctl,lecgad,
-phyctl,l5lay,5 layer soil
-phyctl,lcoldc,
+phyctl,laeroz,.true.: time dependent aerosol and ozone background concentrations are used .false.: constant concentrations are used
+phyctl,lecgad,.true. gads aerosols depend on relative humidity .false.: no dependency on rel. humidity (80% fix)
+phyctl,l5lay,.true.: 5 layer soil .false.: bucket-scheme (default)
+phyctl,lcoldc,.true.: for cold convection precipitation building is allowed
 phyctl,ladvpr,rain advection
 phyctl,leccov,convection
+phyctl,lwdif,.true.: no soil moisture dependency for soil diffusity and heat capacity .false.: soil moisture dependency on (Tido Semmler)
 chem,lchem,switch: chemistry on/off (default: false)
 chem,nhchemini,hour in which the chemistry-calculation is started (useful for calculating met-spinup without chemistry (default=0)
 chem,nupbdy,number of levels (from the top) to be updated by global boundary data (default: 5)
@@ -70,7 +68,7 @@ chem,ycheland,name of the landuse data file (must be in ychedo!)
 chem,ychephot,name of the photolysis data file (must be in ychedo!)
 nmictl,lanmi,true: with adiabatic normal mode initialization [default]  false: ???
 nmictl,dtnmi,timestep for normal mode initialization (first timestep) (ask ralf) (most probably 1/6 of normal timestep)
-prictl,ldia,
+prictl,ldia,.false. (default)
 daten,yaden,experiment number of the input data
 daten,yrden,experiment number of the input data (yaden=yrden is recommended)
 daten,yeden,experiment number of the 'xe' files
@@ -83,9 +81,8 @@ daten,yrdcat,path to the input files
 daten,yedcat,path to the 'xe' files
 daten,yfdcat,path to the 'xf' files
 daten,ytdcat,path to the 'xt' files
-daten,ymdcat,
-daten,yndcat,
-daten,ytdcat,
+daten,ymdcat,path to the monthly files (variables defined in ymvarn)
+daten,yndcat,path to the daily files (variables defined in ynvarn)
 daten,ybdcat,path to the files below
 daten,ybdnam,list of three files describing the yearly vegetation cycle
 daten,ygdcat,path to ghg-file
