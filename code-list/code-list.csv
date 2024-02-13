@@ -150,11 +150,13 @@ code,variable,description,units,layer,time_cell_method,cf_name
 164,ACLCOV,total cloud cover,dimensionless,1,,clt
 165,U10,10m u-velocity,m/s,1,,uas
 166,V10,10m v-velocity,m/s,1,,vas
-167,TEMP2,2m temperature,K,1,,tas
+167,TEMP2,2m temperature,K,1,mean,tas
+367,TEMPI2,2m temperature instantaneous,K,1,point,tas
 168,DEW2,2m dew point temperature,K,1,,
 169,TSURF,surface temperature (land) (see also 54),K,1,,
 170,TD,deep soil temperature,K,1,,
-171,WIND10,10m windspeed,m/s,1,,sfcWind
+171,WIND10,10m windspeed,m/s,1,mean,sfcWind
+371,WINDI10,10m windspeed instantaneous,m/s,1,point,sfcWind
 172,BLA,land sea mask,dimensionless,1,,sftlf
 173,AZ0,surface roughness length,m,1,,
 174,ALB,surface background albedo,dimensionless,1,,
@@ -299,7 +301,8 @@ code,variable,description,units,layer,time_cell_method,cf_name
 469,QTECAC,,,110,,
 496,RAIN,rain water content,kg/kg,1,,
 497,SNOW,snow content,kg/kg,1,,
-498,WIND100,100m windspeed,m/s,1,,
+372,WIND100,100m windspeed,m/s,1,mean,
+373,WINDI100,100m windspeed instantaneous,m/s,1,point,
 571,SUND,sunshine duration,h,1,,sund
 614,PHI,latitude in real coordinates,deg. N,1,,
 615,RLA,longitude in real coordinates,deg. E,1,,
