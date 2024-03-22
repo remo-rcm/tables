@@ -1,7 +1,7 @@
 import cordex as cx
 import pandas as pd
-import pytest
 import pyremo as pr
+import pytest
 
 url = "./domains/domains.csv"
 
