@@ -186,8 +186,8 @@ code,variable,description,units,layer,time_cell_method,cf_name
 198,VGRAT,vegetation ratio,,1,,
 199,VAROR,orographic variance (for surface runoff),,1,,
 200,VLT,leaf area index,m²/m²,1,,
-201,T2MAX,maximum 2m-temperature,K,1,,tasmax
-202,T2MIN,minimum 2m-temperature,K,1,,tasmin
+201,T2MAX,maximum 2m-temperature,K,1,max,tasmax
+202,T2MIN,minimum 2m-temperature,K,1,min,tasmin
 203,SRAD0U,top solar radiation upward,W/m²,1,,rsut
 204,SRADSU,surface solar radiation upward,W/m²,1,,rsus
 205,TRADSU,surface thermal radiation upward,W/m²,1,,rlus
