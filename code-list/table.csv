@@ -148,8 +148,8 @@ code,variable,description,units,layer,time_cell_method,cf_name
 162,ACLC,cloud cover (see also 223),dimensionless,110,,
 163,ACLCV,total cloud cover (see also 164),dimensionless,1,,
 164,ACLCOV,total cloud cover,dimensionless,1,,clt
-165,U10,10m u-velocity,m/s,1,,uas
-166,V10,10m v-velocity,m/s,1,,vas
+165,U10,10m u-velocity,m/s,1,,
+166,V10,10m v-velocity,m/s,1,,
 167,TEMP2,2m temperature,K,1,mean,tas
 367,TEMPI2,2m temperature instantaneous,K,1,point,tas
 168,DEW2,2m dew point temperature,K,1,,
