@@ -240,6 +240,12 @@ code,variable,description,units,layer,time_cell_method,cf_name
 381,V100ER,100m v-velocity derotated,m/s,105,mean,va100m
 382,UI100ER,100m u-velocity derotated instantaneous,m/s,105,point,ua100m
 383,VI100ER,100m v-velocity derotated instantaneous,m/s,105,point,va100m
+378,UI100,100m u-velocity instantaneous,m/s,105,point,ua100m
+379,VI100,100m v-velocity instantaneous,m/s,105,point,va100m
+376,U100,100m u-velocity,m/s,105,mean,ua100m
+377,V100,100m v-velocity,m/s,105,mean,va100m
+368,UI10,10m u-velocity instantaneous,m/s,105,mean,
+369,VI10,10m v-velocity instantaneous,m/s,105,mean,
 271,GHPBL,height of the planetary boundary layer,m,1,,zmla
 272,BETA,,,1,,
 273,WMINLOK,,,1,,
