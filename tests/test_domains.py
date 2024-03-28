@@ -20,9 +20,8 @@ def test_table(domain_table):
 def test_magic_numbers(domain_table):
     # test if nlon and nlat are magic number
     magic_numbers = pr.magic_numbers()
-    print(magic_numbers)
+    print(f"magic_numbers: {magic_numbers}")
     df = domain_table
     for domain_id, row in df.iterrows():
-        print(row)
         assert row.nlon in magic_numbers
         assert row.nlat in magic_numbers

@@ -148,8 +148,8 @@ code,variable,description,units,layer,time_cell_method,cf_name
 162,ACLC,cloud cover (see also 223),dimensionless,110,,
 163,ACLCV,total cloud cover (see also 164),dimensionless,1,,
 164,ACLCOV,total cloud cover,dimensionless,1,,clt
-165,U10,10m u-velocity,m/s,1,,uas
-166,V10,10m v-velocity,m/s,1,,vas
+165,U10,10m u-velocity,m/s,1,,
+166,V10,10m v-velocity,m/s,1,,
 167,TEMP2,2m temperature,K,1,mean,tas
 367,TEMPI2,2m temperature instantaneous,K,1,point,tas
 168,DEW2,2m dew point temperature,K,1,,
@@ -186,8 +186,8 @@ code,variable,description,units,layer,time_cell_method,cf_name
 198,VGRAT,vegetation ratio,,1,,
 199,VAROR,orographic variance (for surface runoff),,1,,
 200,VLT,leaf area index,m²/m²,1,,
-201,T2MAX,maximum 2m-temperature,K,1,,tasmax
-202,T2MIN,minimum 2m-temperature,K,1,,tasmin
+201,T2MAX,maximum 2m-temperature,K,1,max,tasmax
+202,T2MIN,minimum 2m-temperature,K,1,min,tasmin
 203,SRAD0U,top solar radiation upward,W/m²,1,,rsut
 204,SRADSU,surface solar radiation upward,W/m²,1,,rsus
 205,TRADSU,surface thermal radiation upward,W/m²,1,,rlus
