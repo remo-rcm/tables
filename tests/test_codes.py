@@ -11,6 +11,8 @@ def code_table():
 
 def test_unique_codes():
     df = pd.read_csv(url)
-    # code and variable names should be unique
+    # code and variable names should be unique (execpt PHI, RLA)
     assert df.code.is_unique
-    # assert df.variable.is_unique
+    assert (
+        df.variable.dropna().drop(df[df.variable.isin(("PHI", "RLA"))].index).is_unique
+    )
