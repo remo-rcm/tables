@@ -471,3 +471,4 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 2033,T2UCMIN,2-meter temperature minimum based on urban canyon approach,,105,mean,,teb
 2034,T2UCMAX,2-meter temperature maximum based on urban canyon approach,,105,mean,,teb
 2035,T2UCI,2-meter instant temperature based on urban canyon approach,,105,mean,,teb
+552,CVS,snow cover fraction,,1,mean,,atmos
