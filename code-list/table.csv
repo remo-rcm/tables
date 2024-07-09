@@ -124,7 +124,7 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 138,,,,1,mean,,atmos
 139,TS,surface temperature (mean over gridbox),K,1,mean,ts,atmos
 140,WS,soil wetness,m,1,mean,mrso,atmos
-141,SN,snow depth,g mm^-2,1,mean,snw,atmos
+141,SN,snow depth,g mm-2,1,mean,snw,atmos
 142,APRL,large scale precipitation,mm,1,mean,,atmos
 143,APRC,convective precipitation,mm,1,mean,prc,atmos
 144,APRS,snow fall,mm,1,mean,prsn,atmos
