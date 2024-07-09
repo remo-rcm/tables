@@ -130,7 +130,7 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 144,APRS,snow fall,mm,1,mean,prsn,atmos
 145,VDIS,boundary layer dissipation (accumulated),W/m²,1,mean,,atmos
 146,AHFS,surface sensible heat flux,W/m²,1,mean,hfss,atmos
-147,AHFL,surface latent heat flux,W/m²,1,mean,hfls,atmos
+147,AHFL,surface latent heat flux,W/m²,1,mean,atmos
 148,,,,1,mean,,atmos
 149,,,,1,mean,,atmos
 150,,,,1,mean,,atmos
@@ -297,8 +297,8 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 453,RAUTAC,,,110,mean,,atmos
 454,CLCP1LC,,,110,mean,,atmos
 455,CNDAC,,,110,mean,,atmos
-456,BFLHS,surface sensible heat flux (=146),W/m²,1,mean,hfss,atmos
-457,BFLQDS,surface latent heat flux (=147),W/m²,1,mean,hfls,atmos
+456,BFLHS,surface sensible heat flux (=146),W m-2,1,mean,hfss,atmos
+457,BFLQDS,surface latent heat flux (=147),W m-2,1,mean,hfls,atmos
 458,WBT,wet bulb temperature (not a model variable),K,1,mean,,atmos
 459,SACI1AC,,,110,mean,,atmos
 460,SACI2AC,,,110,mean,,atmos
