@@ -139,7 +139,7 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 153,QW,liquid water content,kg/kg,110,mean,,atmos
 154,,,,1,mean,,atmos
 155,,,,1,mean,,atmos
-156,FI,geopotential height,m,109,mean,zg,atmos
+156,FI,geopotential height,m,109,point,zg,atmos
 157,RELHUM,relative humidity (only an output variable of the pressure interpolation routine as 'REL HUM ' in the namelist),%,110,mean,hur,atmos
 158,,,,1,mean,,atmos
 159,USTAR3,TKE for ocean mixed layer (accumulated),(m**3/s**3)*s,1,mean,,atmos
