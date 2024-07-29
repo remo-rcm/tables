@@ -113,10 +113,10 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 127,SNMDL,GLACIER: Mean snow depth on non-glaciated fraction during SNAGEL,m w.e.,1,mean,,atmos
 128,SNMDG,GLACIER: Mean snow depth on glaciated fraction during SNAGEG,m w.e.,1,mean,,atmos
 129,FIB,surface geopotential (orography),m,1,,orog,atmos
-130,T,temperature,K,110,mean,ta,atmos
-131,U,u-velocity,m/s,110,mean,ua,atmos
-132,V,v-velocity,m/s,110,mean,va,atmos
-133,QD,specific humidity,kg/kg,110,mean,hus,atmos
+130,T,temperature,K,110,point,ta,atmos
+131,U,u-velocity,m/s,110,point,ua,atmos
+132,V,v-velocity,m/s,110,point,va,atmos
+133,QD,specific humidity,kg/kg,110,point,hus,atmos
 134,PS,Surface pressure,Pa,1,mean,ps,atmos
 135,OMEGA,Vertical velocity,Pa/s,110,mean,,atmos
 136,,,,1,mean,,atmos
@@ -139,8 +139,8 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 153,QW,liquid water content,kg/kg,110,mean,,atmos
 154,,,,1,mean,,atmos
 155,,,,1,mean,,atmos
-156,FI,geopotential height,m,109,mean,zg,atmos
-157,RELHUM,relative humidity (only an output variable of the pressure interpolation routine as 'REL HUM ' in the namelist),%,110,mean,hur,atmos
+156,FI,geopotential height,m,109,point,zg,atmos
+157,RELHUM,relative humidity (only an output variable of the pressure interpolation routine as 'REL HUM ' in the namelist),%,110,point,hur,atmos
 158,,,,1,mean,,atmos
 159,USTAR3,TKE for ocean mixed layer (accumulated),(m**3/s**3)*s,1,mean,,atmos
 160,RUNOFF,total runoff (surface runoff PLUS drainage !!),mm,1,mean,mrro,atmos
