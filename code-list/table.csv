@@ -315,7 +315,7 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 497,SNOW,snow content,kg/kg,1,mean,,atmos
 372,WIND100,100m windspeed,m/s,1,mean,,atmos
 373,WINDI100,100m windspeed instantaneous,m/s,1,point,,atmos
-571,SUND,sunshine duration,h,1,mean,sund,atmos
+571,SUND,sunshine duration,s,1,mean,sund,atmos
 614,PHI,latitude in real coordinates,deg. N,1,,,atmos
 615,RLA,longitude in real coordinates,deg. E,1,,,atmos
 470,FLTMWAT,mean temperature of the water column,K,1,mean,,flake
