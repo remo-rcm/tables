@@ -129,7 +129,7 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 143,APRC,convective precipitation,mm,1,mean,prc,atmos
 144,APRS,snow fall,mm,1,mean,prsn,atmos
 145,VDIS,boundary layer dissipation (accumulated),W/m²,1,mean,,atmos
-146,AHFS,surface sensible heat flux,W m-2,1,mean,hfss,atmos
+146,AHFS,surface sensible heat flux,W m-2,1,mean,,atmos
 147,AHFL,surface latent heat flux,W m-2,1,mean,,atmos
 148,,,,1,mean,,atmos
 149,,,,1,mean,,atmos
