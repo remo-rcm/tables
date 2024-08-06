@@ -244,8 +244,8 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 379,VI100,100m v-velocity instantaneous,m/s,105,point,va100m,atmos
 376,U100,100m u-velocity,m/s,105,mean,ua100m,atmos
 377,V100,100m v-velocity,m/s,105,mean,va100m,atmos
-368,UI10,10m u-velocity instantaneous,m/s,105,mean,,atmos
-369,VI10,10m v-velocity instantaneous,m/s,105,mean,,atmos
+368,UI10,10m u-velocity instantaneous,m/s,105,point,,atmos
+369,VI10,10m v-velocity instantaneous,m/s,105,point,,atmos
 271,GHPBL,height of the planetary boundary layer,m,1,mean,zmla,atmos
 272,BETA,,,1,mean,,atmos
 273,WMINLOK,,,1,min,,atmos
@@ -432,7 +432,7 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 984,POPDENS,Population Density,,1,mean,,teb
 985,XRAIN,Rain rate ,kg/m2/s,1,mean,,teb
 986,XSNOW,Snow rate ,kg/m2/s,1,mean,,teb
-987,PLW_RADI,downward long-wave radiation (instant) ,W/m2,1,mean,,teb
+987,PLW_RADI,downward long-wave radiation (instant),W/m2,1,point,,teb
 988,UWFRAC,urban water fraction (water = potential evaporation from snow,,1,mean,,teb
 989,TEBRM_PS,Urban: old surface pressure,,1,mean,,teb
 2000,TPN_PRDA,Present day integrated thermal production of energy (panel),J/m2,1,mean,,teb
@@ -470,6 +470,6 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 2032,T2UC,2-meter temperature based on urban canyon approach,K,105,mean,tascan,teb
 2033,T2UCMIN,2-meter temperature minimum based on urban canyon approach,,105,mean,,teb
 2034,T2UCMAX,2-meter temperature maximum based on urban canyon approach,,105,mean,,teb
-2035,T2UCI,2-meter instant temperature based on urban canyon approach,K,105,mean,tascan,teb
+2035,T2UCI,2-meter instant temperature based on urban canyon approach,K,105,point,tascan,teb
 551,SNH,snow depth,m,1,mean,snd,atmos
 552,CVS,snow cover fraction,1,1,mean,snc,atmos
