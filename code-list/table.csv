@@ -366,7 +366,7 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 918,PSCASGRD,Diffusive downwelling solar radiation at ground level,W/m2,1,mean,,teb
 919,PSCASGRU,Diffusive upwelling solar radiation at ground level,W/m2,1,mean,,teb
 920,PSCASGRH,Diffusive horizontal solar radiation at ground level,W/m2,1,mean,,teb
-921,PLWGRDOW,Downwelling longwave radiation at ground level,W/m2,1,mean,rlds,teb
+921,PLWGRDOW,Downwelling longwave radiation at ground level,W/m2,1,mean,,teb
 922,PLWGRHOR,Longwave radiation in horizontal direction at ground level,W/m2,1,mean,,teb
 923,PLAD_CAN,vertical profile of Leaf Area Density on canopy grid,,1,mean,,teb
 924,PDH_HVEG,sensible heat flux from trees discretized on canopy grid,,1,mean,,teb
