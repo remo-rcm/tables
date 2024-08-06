@@ -346,7 +346,7 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 495,EMTERFL,effective emissivity of lakes,,,mean,,flake
 900,URBFR,urban fraction (of the land fraction),,1,mean,sfturf,teb
 1731,ZVEG,surface roughness length due to vegetation,,1,mean,,teb
-901,QDBUR,specific humidity surface (urban),,1,mean,hus50m,teb
+901,QDBUR,specific humidity surface (urban),,1,mean,,teb
 902,TSURECH,surface temperature (urban) ,K,1,mean,,teb
 903,BFLHSUR,surface sensible heat flux (progexp) ,W/m2,1,mean,,teb
 904,AHFSUR,surface sensible heat flux (vdiff) ,W/m2,1,mean,,teb
