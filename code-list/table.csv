@@ -158,7 +158,7 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 171,WIND10,10m windspeed,m/s,1,mean,sfcWind,atmos
 371,WINDI10,10m windspeed instantaneous,m/s,1,point,sfcWind,atmos
 172,BLA,land sea mask,1,1,,sftlf,atmos
-173,AZ0,surface roughness length,m,1,mean,,atmos
+173,AZ0,surface roughness length,m,1,mean,z0,atmos
 174,ALB,surface background albedo,1,1,mean,,atmos
 175,ALBEDO,surface albedo,1,1,mean,albedo,atmos
 176,SRADS,net surface solar radiation,W/m²,1,mean,rsntds,atmos
@@ -214,7 +214,7 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 226,FAO,FAO data set (soil data flags),0...6.,1,mean,,atmos
 227,RGCGN,heat capacity of soil,,1,mean,,atmos
 228,,,,1,mean,,atmos
-229,WSMX,field capacity of soil,m³/m³,1,mean,,atmos
+229,WSMX,field capacity of soil,m³/m³,1,mean,mrsofc,atmos
 230,QVI,vertically integrated specific humidity,kg/m²,1,mean,prw,atmos
 231,ALWCVI,vertically integrated liquid water cont.,kg/m²,1,mean,clwvi,atmos
 232,GLAC,glacier mask (0.: no,1.: yes),1,mean,,atmos
@@ -244,8 +244,8 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 379,VI100,100m v-velocity instantaneous,m/s,105,point,va100m,atmos
 376,U100,100m u-velocity,m/s,105,mean,ua100m,atmos
 377,V100,100m v-velocity,m/s,105,mean,va100m,atmos
-368,UI10,10m u-velocity instantaneous,m/s,105,mean,,atmos
-369,VI10,10m v-velocity instantaneous,m/s,105,mean,,atmos
+368,UI10,10m u-velocity instantaneous,m/s,105,point,,atmos
+369,VI10,10m v-velocity instantaneous,m/s,105,point,,atmos
 271,GHPBL,height of the planetary boundary layer,m,1,mean,zmla,atmos
 272,BETA,,,1,mean,,atmos
 273,WMINLOK,,,1,min,,atmos
@@ -341,10 +341,10 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 490,VSTRFL,surface v-stress over lake fraction,Pa,1,mean,,flake
 491,EVAPFL,surface evaporation on lake fraction,mm,1,mean,,flake
 492,TMCHFL,turbulent transfer coefficient of heat at the surface on lake fraction,,1,mean,,flake
-493,FLFRA,lake fraction,,,mean,,flake
+493,FLFRA,lake fraction,,,mean,sftlaf,flake
 494,FLADE,lake depth,m,,mean,,flake
 495,EMTERFL,effective emissivity of lakes,,,mean,,flake
-900,URBFR,urban fraction (of the land fraction),,1,mean,,teb
+900,URBFR,urban fraction (of the land fraction),,1,mean,sfturf,teb
 1731,ZVEG,surface roughness length due to vegetation,,1,mean,,teb
 901,QDBUR,specific humidity surface (urban),,1,mean,,teb
 902,TSURECH,surface temperature (urban) ,K,1,mean,,teb
@@ -432,7 +432,7 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 984,POPDENS,Population Density,,1,mean,,teb
 985,XRAIN,Rain rate ,kg/m2/s,1,mean,,teb
 986,XSNOW,Snow rate ,kg/m2/s,1,mean,,teb
-987,PLW_RADI,downward long-wave radiation (instant) ,W/m2,1,mean,,teb
+987,PLW_RADI,downward long-wave radiation (instant),W/m2,1,point,,teb
 988,UWFRAC,urban water fraction (water = potential evaporation from snow,,1,mean,,teb
 989,TEBRM_PS,Urban: old surface pressure,,1,mean,,teb
 2000,TPN_PRDA,Present day integrated thermal production of energy (panel),J/m2,1,mean,,teb
@@ -453,10 +453,10 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 2015,T_XT_WAA,wall layer temperatures,K,109,mean,,teb
 2016,T_XT_WAB,wall layer temperatures,K,109,mean,,teb
 2017,T_XT_CAN,canyon air temperature,K,1,mean,,teb
-2018,T_XQ_CAN,canyon air specific humidity (kg/kg),kg/kg,1,mean,,teb
+2018,T_XQ_CAN,canyon air specific humidity (kg/kg),1,1,mean,husscan,teb
 2019,T_XT_BLD,soil layer temperatures under buildings,K,109,mean,,teb
 2020,T_XT_RD,soil layer temperatures under roads,K,109,mean,,teb
-2021,T_XT_RF,roof layer temperatures,K,109,mean,,teb
+2021,T_XT_RF,roof layer temperatures,K,109,mean,tsroof,teb
 2022,HM_XWRD,soil volumetric water content profile (under roads),m**3/m**3,109,mean,,teb
 2023,HM_XWIRD,soil liquid water equivalent volumetric ice content profile (under roads),m**3/m**3,109,mean,,teb
 2024,HM_XWBD,soil volumetric water content profile (under buildings),m**3/m**3,109,mean,,teb
@@ -467,9 +467,9 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 2029,B_XQIBLD,building interior temperature,K,109,mean,,teb
 2030,B_XT_FLR,floor layer temperatures,K,109,mean,,teb
 2031,B_XT_MAS,Air cooled building internal th. mass temperature,K,109,mean,,teb
-2032,T2UC,2-meter temperature based on urban canyon approach,,105,mean,,teb
+2032,T2UC,2-meter temperature based on urban canyon approach,K,105,mean,tascan,teb
 2033,T2UCMIN,2-meter temperature minimum based on urban canyon approach,,105,mean,,teb
 2034,T2UCMAX,2-meter temperature maximum based on urban canyon approach,,105,mean,,teb
-2035,T2UCI,2-meter instant temperature based on urban canyon approach,,105,mean,,teb
+2035,T2UCI,2-meter instant temperature based on urban canyon approach,K,105,point,tascan,teb
 551,SNH,snow depth,m,1,mean,snd,atmos
 552,CVS,snow cover fraction,1,1,mean,snc,atmos
