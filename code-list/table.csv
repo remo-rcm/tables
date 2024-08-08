@@ -251,7 +251,7 @@ code,variable,description,units,layer,time_cell_method,cf_name,module
 273,WMINLOK,,,1,min,,atmos
 274,WMAXLOK,,,1,max,,atmos
 275,VBM10M,maximum of the expected gust velocity near the surface,m/s,1,max,wsgsmax,atmos
-276,CAPE,convective available potential energy,J/kg,1,mean,,atmos
+276,CAPE,convective available potential energy,J/kg,1,mean,cape,atmos
 281,PINT,non-hydrostatic pressure,,110,mean,,atmos
 282,DWDT,non-hydrostatic acceleration,,110,mean,,atmos
 283,W,non-hydrostatic vertical velocity,,109,mean,,atmos
