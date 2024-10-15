@@ -1,475 +1,475 @@
-code,variable,description,units,layer,time_cell_method,cf_name,module
-1,WS1,soil wetness of layer 1,m,1,mean,,atmos
-2,WS2,soil wetness of layer 2,m,1,mean,,atmos
-3,WS3,soil wetness of layer 3,m,1,mean,,atmos
-4,WS4,soil wetness of layer 4,m,1,mean,,atmos
-5,WS5,soil wetness of layer 5,m,1,mean,,atmos
-6,DZR,Rooting depth,m,1,mean,,atmos
-7,DZS,Soil depth until bedrock derived from textures,m,1,mean,,atmos
-8,FKSAT,Saturated hydraulic conductivity (Clapp and Hornberger),m/s,1,mean,,atmos
-9,FMPOT,Matrix potential,m,1,mean,,atmos
-10,BCLAPP,Exponent b in Clapp and Hornberger,,1,mean,,atmos
-11,VPOR,Volumetric soil porosity,m/m,1,mean,,atmos
-12,ETRANS,transpiration at the surface,mm,1,mean,tran,atmos
-13,EBSOIL,Bare soil evaporation at the surface,mm,1,mean,evspsblsoi,atmos
-14,FTKVM,turbulent transfer coefficient of momentum in the atmosphere,,109,mean,,atmos
-15,FTKVH,turbulent transfer coefficient of heat in the atmosphere,,109,mean,,atmos
-16,TGLAC1,GLACIER: Temperature of upper ice layer,K,1,mean,,atmos
-17,TGLAC2,GLACIER: Temperature of lower ice layer,K,1,mean,,atmos
-18,GLD,GLACIER: Ice thickness,m w.e.,1,mean,,atmos
-19,GLRUN,GLACIER: Surface runoff originating runoff from glaciated fraction (reference area: total land area),mm,1,mean,,atmos
-20,GLDRAIN,GLACIER: Drainage originating from glaciated fraction (reference area: total land area),mm,1,mean,,atmos
-21,GLACIER,GLACIER: Fractional glacier cover,,1,mean,,atmos
-22,TD3G,GLACIER: Soil temperature of glaciated fraction (1st layer),K,1,mean,,atmos
-23,TD4G,GLACIER: Soil temperature of glaciated fraction (2nd layer),K,1,mean,,atmos
-24,TD5G,GLACIER: Soil temperature of glaciated fraction (3rd layer),K,1,mean,,atmos
-25,TDG,GLACIER: Soil temperature of glaciated fraction (4th layer),K,1,mean,,atmos
-26,TDCLG,GLACIER: Soil temperature of glaciated fraction (5th layer),K,1,mean,,atmos
-27,WI3G,GLACIER: Fraction of frozen soil of glaciated fraction (1st layer),,1,mean,,atmos
-28,WI4G,GLACIER: Fraction of frozen soil of glaciated fraction (2nd layer),,1,mean,,atmos
-29,WI5G,GLACIER: Fraction of frozen soil of glaciated fraction (3rd layer),,1,mean,,atmos
-30,WIG,GLACIER: Fraction of frozen soil of glaciated fraction (4th layer),,1,mean,,atmos
-31,WICLG,GLACIER: Fraction of frozen soil of glaciated fraction (5th layer),,1,mean,,atmos
-32,GLACCI,GLACIER: Ice accumulation on glaciated fraction (reference area: glaciated area),mm w.e.,1,mean,,atmos
-33,GLABLI,GLACIER: Ice ablation on glaciated fraction (reference area: glaciated area),mm w.e.,1,mean,,atmos
-34,GLACCS,GLACIER: Snow accumulation on glaciated fraction (reference area: glaciated area),mm w.e.,1,mean,,atmos
-35,GLABLS,GLACIER: Snow ablation on glaciated fraction (reference area: glaciated area),mm w.e.,1,mean,,atmos
-36,GLVOL,GLACIER: Ice volume,m³ w.e.,1,mean,,atmos
-37,SRADSGI,GLACIER: Surface incoming solar radiation on glaciated fraction,W/m²,1,mean,,atmos
-38,SRADSGO,GLACIER: Surface outgoing solar radiation on glaciated fraction,W/m²,1,mean,,atmos
-49,TRSOL,effective transmissivity,,1,mean,,atmos
-51,EMTEF,,,1,mean,,atmos
-52,TRSOF,,,1,mean,,atmos
-53,DRAIN,drainage (part of 160),mm,1,mean,,atmos
-54,TSL,surface temperature (land),K,1,mean,,atmos
-55,TSW,surface temperature (water),K,1,mean,,atmos
-56,TSI,surface temperature (ice),K,1,mean,,atmos
-57,USTRL,surface u-stress (land),Pa,1,mean,,atmos
-58,USTRW,surface u-stress (water),Pa,1,mean,,atmos
-59,USTRI,surface u-stress (ice),Pa,1,mean,,atmos
-60,VSTRL,surface v-stress (land),Pa,1,mean,,atmos
-61,VSTRW,surface v-stress (water),Pa,1,mean,,atmos
-62,VSTRI,surface v-stress (ice),Pa,1,mean,,atmos
-63,EVAPL,surface evaporation (land),mm,1,mean,,atmos
-64,EVAPW,surface evaporation (water),mm,1,mean,,atmos
-65,EVAPI,surface evaporation (ice),mm,1,mean,,atmos
-66,AHFLL,surface latent heat flux (land),W/m²,1,mean,,atmos
-67,AHFLW,surface latent heat flux (water),W/m²,1,mean,,atmos
-68,AHFLI,surface latent heat flux (ice),W/m²,1,mean,,atmos
-69,AHFSL,surface sensible heat flux (land),W/m²,1,mean,,atmos
-70,AHFSW,surface sensible heat flux (water),W/m²,1,mean,,atmos
-71,AHFSI,surface sensible heat flux (ice),W/m²,1,mean,,atmos
-72,AZ0L,surface roughness length (land),m,1,mean,,atmos
-73,AZ0W,surface roughness length (water),m,1,mean,,atmos
-74,AZ0I,surface roughness length (ice),m,1,mean,,atmos
-75,ALSOL,surface albedo (land),1,1,mean,,atmos
-76,ALSOW,surface albedo (water),1,1,mean,,atmos
-77,ALSOI,surface albedo (ice),1,1,mean,,atmos
-81,TMCHL,turbulent transfer coefficient of heat at the surface (land),,1,mean,,atmos
-82,TMCHW,turbulent transfer coefficient of heat at the surface (water),,1,mean,,atmos
-83,TMCHI,turbulent transfer coefficient of heat at the surface (ice),,1,mean,,atmos
-84,QDBL,specific humidity surface (land),kg/kg,1,mean,,atmos
-85,QDBW,specific humidity surface (water),kg/kg,1,mean,,atmos
-86,QDBI,specific humidity surface (ice),kg/kg,1,mean,,atmos
-87,BFLHSL,surface sensible heat flux (land) (= 69),W/m²,1,mean,,atmos
-88,BFLHSW,surface sensible heat flux (water) (= 70),W/m²,1,mean,,atmos
-89,BFLHSI,surface sensible heat flux (ice) (= 71),W/m²,1,mean,,atmos
-90,BFLQDSL,surface latent heat flux (land) (= 66),W/m²,1,mean,,atmos
-91,BFLQDSW,surface latent heat flux (water) (= 67),W/m²,1,mean,,atmos
-92,BFLQDSI,surface latent heat flux (ice) (= 68),W/m²,1,mean,,atmos
-93,AHFICE,sea-ice: conductive heat,W/m,1,mean,,atmos
-94,QRES,residual heat flux for melting sea ice,W/m²,1,mean,,atmos
-95,SRFL,net solar radiative flux at the surface,,1,mean,,atmos
-96,QDBOXS,horizontal transport of water vapour,kg/m²,1,mean,,atmos
-97,QWBOXS,horizontal transport of cloud water,kg/m²,1,mean,,atmos
-98,EKBOXS,horizontal transport of kinetic energy,(3600*J)/m²,1,mean,,atmos
-99,FHBOXS,horizontal transport of sensible heat,(3600*J)/m²,1,mean,,atmos
-100,FIBOXS,horizontal transport of potential energy,(3600*J)/m²,1,mean,,atmos
-101,TLAMBDA,heat conductivity of dry soil,W/(K*m),1,mean,,atmos
-103,DLAMBDA,parameter for increasing the heat conductivity of the soil due to soil moisture (TLAMBDA+DLAMBDA gives the heat conductivity of saturated soil),,1,mean,,atmos
-104,PORVOL,pore volume,,1,mean,,atmos
-105,FCAP,field capacity of soil,m³/m³,1,mean,,atmos
-106,WI3,fraction of frozen soil (layers analogous soil temp.),,1,mean,,atmos
-107,WI4,fraction of frozen soil (layers analogous soil temp.),,1,mean,,atmos
-108,WI5,fraction of frozen soil (layers analogous soil temp.),,1,mean,,atmos
-109,WI,fraction of frozen soil (layers analogous soil temp.),,1,mean,,atmos
-110,WICL,fraction of frozen soil (layers analogous soil temp.),,1,mean,,atmos
-111,TSGECH,GLACIER: Surface temperature of glaciated fraction,K,1,mean,,atmos
-112,QDB,specific humidity surface,kg/kg,1,mean,,atmos
-113,AZ0G,GLACIER: Surface roughness length of glaciated fraction,m,1,mean,,atmos
-114,TMCHG,GLACIER: Turbulent exchange coefficient for sensible and latent heat on glaciated fraction,,1,mean,,atmos
-115,AHFSG,GLACIER: Sensible heat flux on glaciated fraction (VDIFF),W/m²,1,mean,,atmos
-116,BFLHSG,GLACIER: Sensible heat flux on glaciated fraction (PROGEXP),W/m²,1,mean,,atmos
-117,BFLQDSG,GLACIER: Latent heat flux on glaciated fraction (PROGEXP),W/m²,1,mean,,atmos
-118,EVAPG,GLACIER: Evaporation on glaciated fraction (reference area: glaciated area),mm,1,mean,,atmos
-119,QDBG,GLACIER: Specific humidity over glaciated fraction,kg/kg,1,mean,,atmos
-120,USTRG,GLACIER: Surface u-stress over glaciated fraction,Pa*s,1,mean,,atmos
-121,VSTRG,GLACIER: Surface v-stress over glaciated fraction,Pa*s,1,mean,,atmos
-122,ALSOG,GLACIER: Surface albedo of glaciated fraction,,1,mean,,atmos
-123,SNG,GLACIER: Snow depth on glaciated fraction,m w.e.,1,mean,,atmos
-124,TSNG,GLACIER: Snow temperature on glaciated fraction,K,1,mean,,atmos
-125,SNAGEL,GLACIER: Snow age on non-glaciated fraction,days,1,mean,,atmos
-126,SNAGEG,GLACIER: Snow age on glaciated fraction,days,1,mean,,atmos
-127,SNMDL,GLACIER: Mean snow depth on non-glaciated fraction during SNAGEL,m w.e.,1,mean,,atmos
-128,SNMDG,GLACIER: Mean snow depth on glaciated fraction during SNAGEG,m w.e.,1,mean,,atmos
-129,FIB,surface geopotential (orography),m,1,,orog,atmos
-130,T,temperature,K,110,point,ta,atmos
-131,U,u-velocity,m/s,110,point,ua,atmos
-132,V,v-velocity,m/s,110,point,va,atmos
-133,QD,specific humidity,kg/kg,110,point,hus,atmos
-134,PS,Surface pressure,Pa,1,mean,ps,atmos
-135,OMEGA,Vertical velocity,Pa/s,110,mean,,atmos
-136,,,,1,mean,,atmos
-137,,,,1,mean,,atmos
-138,,,,1,mean,,atmos
-139,TS,surface temperature (mean over gridbox),K,1,mean,ts,atmos
-140,WS,soil wetness,m,1,mean,mrso,atmos
-141,SN,snow depth,g mm-2,1,mean,snw,atmos
-142,APRL,large scale precipitation,mm,1,mean,,atmos
-143,APRC,convective precipitation,mm,1,mean,prc,atmos
-144,APRS,snow fall,mm,1,mean,prsn,atmos
-145,VDIS,boundary layer dissipation (accumulated),W/m²,1,mean,,atmos
-146,AHFS,surface sensible heat flux,W m-2,1,mean,,atmos
-147,AHFL,surface latent heat flux,W m-2,1,mean,,atmos
-148,,,,1,mean,,atmos
-149,,,,1,mean,,atmos
-150,,,,1,mean,,atmos
-151,PSRED,mean sea level pressure,Pa,1,mean,psl,atmos
-152,,,,1,mean,,atmos
-153,QW,liquid water content,kg/kg,110,mean,,atmos
-154,,,,1,mean,,atmos
-155,,,,1,mean,,atmos
-156,FI,geopotential height,m,109,point,zg,atmos
-157,RELHUM,relative humidity (only an output variable of the pressure interpolation routine as 'REL HUM ' in the namelist),%,110,point,hur,atmos
-158,,,,1,mean,,atmos
-159,USTAR3,TKE for ocean mixed layer (accumulated),(m**3/s**3)*s,1,mean,,atmos
-160,RUNOFF,total runoff (surface runoff PLUS drainage !!),mm,1,mean,mrro,atmos
-161,,,,1,mean,,atmos
-162,ACLC,cloud cover (see also 223),1,110,mean,,atmos
-163,ACLCV,total cloud cover (see also 164),1,1,mean,,atmos
-164,ACLCOV,total cloud cover,1,1,mean,clt,atmos
-165,U10,10m u-velocity,m/s,1,mean,,atmos
-166,V10,10m v-velocity,m/s,1,mean,,atmos
-167,TEMP2,2m temperature,K,1,mean,tas,atmos
-367,TEMPI2,2m temperature instantaneous,K,1,point,tas,atmos
-168,DEW2,2m dew point temperature,K,1,mean,,atmos
-169,TSURF,surface temperature (land) (see also 54),K,1,mean,,atmos
-170,TD,deep soil temperature,K,1,mean,,atmos
-171,WIND10,10m windspeed,m/s,1,mean,sfcWind,atmos
-371,WINDI10,10m windspeed instantaneous,m/s,1,point,sfcWind,atmos
-172,BLA,land sea mask,1,1,,sftlf,atmos
-173,AZ0,surface roughness length,m,1,mean,z0,atmos
-174,ALB,surface background albedo,1,1,mean,,atmos
-175,ALBEDO,surface albedo,1,1,mean,albedo,atmos
-176,SRADS,net surface solar radiation,W/m²,1,mean,rsntds,atmos
-177,TRADS,net surface thermal radiation,W/m²,1,mean,rlntds,atmos
-178,SRAD0,net top solar radiation,W/m²,1,mean,rsntdt,atmos
-179,TRAD0,top thermal radiation (OLR),W/m²,1,mean,rlut,atmos
-180,USTR,surface u-stress,Pa,1,mean,tauu,atmos
-181,VSTR,surface v-stress,Pa,1,mean,tauv,atmos
-182,EVAP,surface evaporation,mm,1,mean,evspsbl,atmos
-183,TDCL,soil temperature 5.700m thickness,K,1,mean,,atmos
-184,,,,1,mean,,atmos
-185,SRAFS,net surf. solar radiation (clear sky),W/m²,1,mean,,atmos
-186,TRAFS,net surf. thermal radiation (clear sky),W/m²,1,mean,,atmos
-187,SRAF0,net top solar radiation (clear sky),W/m²,1,mean,,atmos
-188,TRAF0,net top thermal radiation (clear sky),W/m²,1,mean,,atmos
-189,SCLFS,surface solar cloud forcing,W/m²,1,mean,,atmos
-190,TCLFS,surface thermal cloud forcing,W/m²,1,mean,tcflfs,atmos
-191,SCLF0,top solar cloud forcing,W/m²,1,mean,,atmos
-192,TCLF0,top thermal cloud forcing,W/m²,1,mean,tcflft,atmos
-193,,,,1,mean,,atmos
-194,WL,skin reservoir content,m,1,mean,,atmos
-195,USTRGW,u-gravity wave stress,Pa,1,mean,,atmos
-196,VSTRGW,v-gravity wave stress,Pa,1,mean,,atmos
-197,VDISGW,gravity wave dissipation,W/m²,1,mean,,atmos
-198,VGRAT,vegetation ratio,,1,mean,,atmos
-199,VAROR,orographic variance (for surface runoff),,1,mean,,atmos
-200,VLT,leaf area index,m²/m²,1,mean,,atmos
-201,T2MAX,maximum 2m-temperature,K,1,max,tasmax,atmos
-202,T2MIN,minimum 2m-temperature,K,1,min,tasmin,atmos
-203,SRAD0U,top solar radiation upward,W/m²,1,mean,rsut,atmos
-204,SRADSU,surface solar radiation upward,W/m²,1,mean,rsus,atmos
-205,TRADSU,surface thermal radiation upward,W/m²,1,mean,rlus,atmos
-206,TSN,snow temperature (see description below),K,1,mean,,atmos
-207,TD3,soil temperature 0.065m thickness,K,1,mean,,atmos
-208,TD4,soil temperature 0.254m thickness,K,1,mean,,atmos
-209,TD5,soil temperature 0.913m thickness,K,1,mean,,atmos
-210,SEAICE,sea ice cover,1,1,mean,,atmos
-211,SICED,sea ice depth,m,1,mean,,atmos
-212,FOREST,vegetation type,,1,mean,,atmos
-213,TEFF,(effective) sea-ice skin temperature,K,1,mean,,atmos
-214,TSMAX,maximum surface temperature,K,1,max,,atmos
-215,TSMIN,minimum surface temperature,K,1,min,,atmos
-216,WIMAX,maximum 10m-wind speed (w/o gusts),m/s,1,max,sfcWindmax,atmos
-217,TOPMAX,maximum height of convective cloud tops,Pa,1,max,,atmos
-218,SNMEL,snow melt,mm,1,mean,snm,atmos
-219,,,,1,mean,,atmos
-220,TSLIN,land: residual surface heat budget sea-ice: conductive heat flux,W/m²,1,mean,,atmos
-221,DSNAC,snow depth change,mm,1,mean,,atmos
-222,EMTER,effective emissivity,,1,mean,,atmos
-223,ACLCAC,cloud cover,1,110,mean,clh,atmos
-224,TKE,turbulent kinetic energy,,110,mean,,atmos
-225,,,,1,mean,,atmos
-226,FAO,FAO data set (soil data flags),0...6.,1,mean,,atmos
-227,RGCGN,heat capacity of soil,,1,mean,,atmos
-228,,,,1,mean,,atmos
-229,WSMX,field capacity of soil,m³/m³,1,mean,mrsofc,atmos
-230,QVI,vertically integrated specific humidity,kg/m²,1,mean,prw,atmos
-231,ALWCVI,vertically integrated liquid water cont.,kg/m²,1,mean,clwvi,atmos
-232,GLAC,glacier mask (0.: no,1.: yes),1,mean,,atmos
-233,,,,1,mean,,atmos
-234,EVAPM,surface evaporation,mm,1,mean,,atmos
-251,,Kevin Sieck,BMI,1,mean,,atmos
-252,SNMELG,GLACIER: Snow melt on glaciated fraction (reference area: total land area),mm w.e.,1,mean,,atmos
-253,PHI,latitude in real coordinates,deg. N,1,,,atmos
-254,RLA,longitude in real coordinates,deg. E,1,,,atmos
-255,GLIMELT,GLACIER: Ice melt on glaciated fraction (reference area: total land area),mm w.e.,1,mean,,atmos
-256,TRADSGI,GLACIER: Surface incoming thermal radiation on glaciated fraction,W/m²,1,mean,,atmos
-257,TRADSGO,GLACIER: Surface outgoing thermal radiation on glaciated fraction,W/m²,1,mean,,atmos
-258,AHFLG,GLACIER: Latent heat flux on glaciated fraction (VDIFF),W/m²,1,mean,,atmos
-259,GLDLAST,GLACIER: Ice thickness after last area adjustment (IGLAAM=2),m w.e.,1,mean,,atmos
-260,APRT,Total Precipitation,mm,1,mean,pr,atmos
-261,AHUM2,2m absolute humidity,kg/m**3,1,mean,,atmos
-262,SRADG,global radiation,W/m**2,1,mean,,atmos
-265,U10ER,10m u-velocity derotated,m/s,105,mean,uas,atmos
-266,V10ER,10m v-velocity derotated,m/s,105,mean,vas,atmos
-374,UI10ER,10m u-velocity derotated instantaneous,m/s,105,point,uas,atmos
-375,VI10ER,10m v-velocity derotated instantaneous,m/s,105,point,vas,atmos
-380,U100ER,100m u-velocity derotated,m/s,105,mean,ua100m,atmos
-381,V100ER,100m v-velocity derotated,m/s,105,mean,va100m,atmos
-382,UI100ER,100m u-velocity derotated instantaneous,m/s,105,point,ua100m,atmos
-383,VI100ER,100m v-velocity derotated instantaneous,m/s,105,point,va100m,atmos
-378,UI100,100m u-velocity instantaneous,m/s,105,point,ua100m,atmos
-379,VI100,100m v-velocity instantaneous,m/s,105,point,va100m,atmos
-376,U100,100m u-velocity,m/s,105,mean,ua100m,atmos
-377,V100,100m v-velocity,m/s,105,mean,va100m,atmos
-368,UI10,10m u-velocity instantaneous,m/s,105,point,,atmos
-369,VI10,10m v-velocity instantaneous,m/s,105,point,,atmos
-271,GHPBL,height of the planetary boundary layer,m,1,mean,zmla,atmos
-272,BETA,,,1,mean,,atmos
-273,WMINLOK,,,1,min,,atmos
-274,WMAXLOK,,,1,max,,atmos
-275,VBM10M,maximum of the expected gust velocity near the surface,m/s,1,max,wsgsmax,atmos
-276,CAPE,convective available potential energy,J/kg,1,mean,cape,atmos
-281,PINT,non-hydrostatic pressure,,110,mean,,atmos
-282,DWDT,non-hydrostatic acceleration,,110,mean,,atmos
-283,W,non-hydrostatic vertical velocity,,109,mean,,atmos
-284,SVHCAP,vol. heat capacity of dry soil,J/(m³*K),1,mean,,atmos
-285,SLAMBDA,heat conductivity of dry soil,J/(m³*K),1,mean,,atmos
-287,QJX,zonal vertically integrated moisture transport,kg m/m² s,1,mean,,atmos
-288,QJY,meridional vertically integrated moisture transport,kg m/m² s,1,mean,,atmos
-296,ADVECR,,kg/m²*s,110,mean,,atmos
-297,ADVECS,,kg/m²*s,110,mean,,atmos
-298,ADVELR,,kg/m²*s,110,mean,,atmos
-299,ADVELS,,kg/m²*s,110,mean,,atmos
-301,ESNOW,evaporation over snow at the surface,mm,1,mean,,atmos
-302,ESKIN,Evaporation from skin reservoir at the surface,mm,1,mean,,atmos
-303,ERES,,,1,mean,,atmos
-317,VFC,volumetric soil field capacity,m/m,1,mean,,atmos
-318,VPWP,volumetric soil permanent wilting point,m/m,1,mean,,atmos
-319,SPSI,soil pore size distribution index, ,1,mean,,atmos
-334,QI,cloud ice,kg/kg,110,mean,,atmos
-336,QIVI,vertically integrated cloud ice,kg/m²,1,mean,clivi,atmos
-337,QIBOXS,horizontal transport of cloud ice,kg/m²,1,mean,,atmos
-416,QDB2,2m specific humidity,kg/kg,1,mean,huss,atmos
-417,VAP2,2m vapour pressure,Pa,1,mean,,atmos
-432,PTEMP,potential temperature (not an output variable),K,110,mean,,atmos
-433,RPR,warm cloud rain production,?,110,mean,,atmos
-434,EVPAC,,,110,mean,,atmos
-435,XLEVAC,,,110,mean,,atmos
-436,XIEVAC,,,110,mean,,atmos
-437,DEPAC,i found a description,,110,mean,,atmos
-438,SUBAC,,,110,mean,,atmos
-439,XISUBAC,,,110,mean,,atmos
-440,SMLTAC,,,110,mean,,atmos
-441,IMLTAC,,,110,mean,,atmos
-442,XIMLTAC,,,110,mean,,atmos
-443,FRLAC,,,110,mean,,atmos
-444,SPRAC,,,110,mean,,atmos
-446,WINDDIR,wind direction in 10m,°,1,mean,,atmos
-447,RELHUM2,relative humidity in 2m,%,1,mean,hurs,atmos
-448,SACL1AC,,,110,mean,,atmos
-449,SACL2AC,,,110,mean,,atmos
-450,RAC1AC,,,110,mean,,atmos
-451,RAC2AC,,,110,mean,,atmos
-452,SAUTAC,,,110,mean,,atmos
-453,RAUTAC,,,110,mean,,atmos
-454,CLCP1LC,,,110,mean,,atmos
-455,CNDAC,,,110,mean,,atmos
-456,BFLHS,surface sensible heat flux (=146),W m-2,1,mean,hfss,atmos
-457,BFLQDS,surface latent heat flux (=147),W m-2,1,mean,hfls,atmos
-458,WBT,wet bulb temperature (not a model variable),K,1,mean,,atmos
-459,SACI1AC,,,110,mean,,atmos
-460,SACI2AC,,,110,mean,,atmos
-461,TMCM,turbulent transfer coefficient of momentum at the surface,,1,mean,,atmos
-462,TMCH,turbulent transfer coefficient of heat at the surface,,1,mean,,atmos
-463,SEDAC,,,110,mean,,atmos
-464,TTELSAC,,,110,mean,,atmos
-465,QTELSAC,,,110,mean,,atmos
-466,XTELSAC,,,110,mean,,atmos
-467,XITELSAC,,,110,mean,,atmos
-468,TTECAC,,,110,mean,,atmos
-469,QTECAC,,,110,mean,,atmos
-496,RAIN,rain water content,kg/kg,1,mean,,atmos
-497,SNOW,snow content,kg/kg,1,mean,,atmos
-372,WIND100,100m windspeed,m/s,1,mean,,atmos
-373,WINDI100,100m windspeed instantaneous,m/s,1,point,,atmos
-571,SUND,sunshine duration,s,1,mean,sund,atmos
-614,PHI,latitude in real coordinates,deg. N,1,,,atmos
-615,RLA,longitude in real coordinates,deg. E,1,,,atmos
-470,FLTMWAT,mean temperature of the water column,K,1,mean,,flake
-471,FLTMIX,mixed-layer temperature,K,1,mean,,flake
-472,FLTWBSED,temperature at the water-bottom sediment interface,K,1,mean,,flake
-473,FLTULSED,temperature at the bottom of the upper layer of the sediments,K,1,mean,,flake
-474,FLSHF,shape factor (thermocline),,1,mean,,flake
-475,FLHSN,snow thickness,m,1,mean,,flake
-476,FLHICE,ice thickness,m,1,mean,,flake
-477,FLHMIX,thickness of the mixed-layer,m,1,mean,,flake
-478,FLHULBS,thickness of the upper layer of bottom sediments,m,1,mean,,flake
-479,FLTSN,temperature at the air-snow interface,K,1,mean,,flake
-480,FLTICE,temperature at the snow-ice or air-ice interface,K,1,mean,,flake
-481,QDBFL,surface specific humidity over lake fraction,kg/kg,1,mean,,flake
-482,TSFLECH,surface temperature over lakes,K,1,mean,,flake
-483,BFLHSFL,surface sensible heat flux on lake fraction (PROGEXP),W/m²,1,mean,,flake
-484,AHFSFL,surface sensible heat flux on lake fraction (VDIFF),W/m²,1,mean,,flake
-485,BFLQDSFL,surface latent heat flux on lake fraction (PROGEXP),W/m²,1,mean,,flake
-486,AHFLFL,surface latent heat flux on lake fraction (VDIFF),W/m²,1,mean,,flake
-487,AZ0FL,surface roughness length of lake fraction,m,1,mean,,flake
-488,ALSOFL,surface albedo of lake fraction,,1,mean,,flake
-489,USTRFL,surface u-stress over lake fraction,Pa,1,mean,,flake
-490,VSTRFL,surface v-stress over lake fraction,Pa,1,mean,,flake
-491,EVAPFL,surface evaporation on lake fraction,mm,1,mean,,flake
-492,TMCHFL,turbulent transfer coefficient of heat at the surface on lake fraction,,1,mean,,flake
-493,FLFRA,lake fraction,,,mean,sftlaf,flake
-494,FLADE,lake depth,m,,mean,,flake
-495,EMTERFL,effective emissivity of lakes,,,mean,,flake
-900,URBFR,urban fraction (of the land fraction),,1,mean,sfturf,teb
-1731,ZVEG,surface roughness length due to vegetation,,1,mean,,teb
-901,QDBUR,specific humidity surface (urban),,1,mean,,teb
-902,TSURECH,surface temperature (urban) ,K,1,mean,,teb
-903,BFLHSUR,surface sensible heat flux (progexp) ,W/m2,1,mean,,teb
-904,AHFSUR,surface sensible heat flux (vdiff) ,W/m2,1,mean,,teb
-905,BFLQDSUR,surface latent heat flux (progexp) ,W/m2,1,mean,,teb
-906,AHFLUR,surface latent heat flux (vdiff) ,W/m2,1,mean,,teb
-907,AZ0UR,surface roughness length ,m,1,mean,,teb
-908,USTRUR,surface u-stress ,Pa,1,mean,,teb
-909,VSTRUR,surface v-stress ,Pa,1,mean,,teb
-910,EVAPUR,surface evaporation ,mm,1,mean,,teb
-911,TMCHUR,turb. trans. coef. of heat at the surf. ,,1,mean,,teb
-912,ALSOUR,VIS albedo (urban),,1,mean,,teb
-913,ALSONUR,NIR albedo (urban),,1,mean,,teb
-914,PTSRADGD,skin surface temperature of urban low vegetation (K),K,1,mean,,teb
-915,PTSRADGR,skin surface temperature of urban green roofs (K),K,1,mean,,teb
-916,PSCASWSK,Diff sol rad from sky received by people (inc attenuation by trees),,1,mean,,teb
-917,PLWRADSK,IR rad from sky received by people (inc attenuation by trees),,1,mean,,teb
-918,PSCASGRD,Diffusive downwelling solar radiation at ground level,W/m2,1,mean,,teb
-919,PSCASGRU,Diffusive upwelling solar radiation at ground level,W/m2,1,mean,,teb
-920,PSCASGRH,Diffusive horizontal solar radiation at ground level,W/m2,1,mean,,teb
-921,PLWGRDOW,Downwelling longwave radiation at ground level,W/m2,1,mean,,teb
-922,PLWGRHOR,Longwave radiation in horizontal direction at ground level,W/m2,1,mean,,teb
-923,PLAD_CAN,vertical profile of Leaf Area Density on canopy grid,,1,mean,,teb
-924,PDH_HVEG,sensible heat flux from trees discretized on canopy grid,,1,mean,,teb
-925,PDLEHVEG,sensible heat flux from trees discretized on canopy grid,,1,mean,,teb
-926,PLEW_RF,latent heat flux over roof (snow),,1,mean,,teb
-927,PLEW_RD,latent heat flux over road (snow),,1,mean,,teb
-928,PRNSN_RF,net radiation over snow,,1,mean,,teb
-929,PHSN_RF,sensible heat flux over snow,,1,mean,,teb
-930,PLESN_RF,latent heat flux over snow,,1,mean,,teb
-931,PGSN_RF,flux under the snow,,1,mean,,teb
-932,PMELT_RF,snow melt,,1,mean,,teb
-933,PRNSN_RD,net radiation over snow,,1,mean,,teb
-934,PHSN_RD,sensible heat flux over snow,,1,mean,,teb
-935,PLESN_RD,latent heat flux over snow,,1,mean,,teb
-936,PGSN_RD,flux under the snow,,1,mean,,teb
-937,PMELT_RD,snow melt,,1,mean,,teb
-938,PRN_GRND,net radiation over ground,,1,mean,,teb
-939,PH_GRND,sensible heat flux over ground,,1,mean,,teb
-940,PLE_GRND,latent heat flux over ground,,1,mean,,teb
-941,PGFLXGRN,flux through the ground,,1,mean,,teb
-942,PRN_TWN,net radiation over town,,1,mean,,teb
-943,PH_TWN,sensible heat flux over town,,1,mean,,teb
-944,PHTWNSUR,sensible heat flux over town,,1,mean,,teb
-945,PHTWNWAL,sensible heat flux over town,,1,mean,,teb
-946,PHTWNROO,sensible heat flux over town,,1,mean,,teb
-947,PLE_TWN,latent heat flux over town,,1,mean,,teb
-948,PGFLXTWN,flux through the ground,,1,mean,,teb
-949,PQF_TWN,anthropogenic flux,,1,mean,,teb
-950,PEVAPTWN,evaporation flux,kg/m2/s,1,mean,,teb
-951,PEVTWNSU,evaporation flux,kg/m2/s,1,mean,,teb
-952,PEVTWNWA,evaporation flux,kg/m2/s,1,mean,,teb
-953,PEVTWNRO,evaporation flux,kg/m2/s,1,mean,,teb
-954,PUW_GRND,momentum flux for ground built surf,,1,mean,,teb
-955,PUW_RF,momentum flux for roofs,,1,mean,,teb
-956,PDUWDUGR,,,1,mean,,teb
-957,PDUWDURF,,,1,mean,,teb
-958,PUSTARTW,friciton velocity over town,,1,mean,,teb
-959,PCD,town averaged drag coefficient,,1,mean,,teb
-960,PCDN,town averaged neutral drag coefficient,,1,mean,,teb
-961,PCH_TWN,town averaged heat transfer coefficient,,1,mean,,teb
-962,PRI_TWN,town averaged Richardson number,,1,mean,,teb
-963,PEMISTWN,town equivalent emissivity,,1,mean,,teb
-964,PSAALTWN,town equivalent diffuse albedo,,1,mean,,teb
-965,PRESATWN,town aerodynamical resistance,,1,mean,,teb
-966,PAC_RD,road conductance,,1,mean,,teb
-967,PAC_GD,green area conductance,,1,mean,,teb
-968,PAC_GR,green roof conductance,,1,mean,,teb
-969,PACRDWAT,road conductance for latent heat,,1,mean,,teb
-970,PACGDWAT,green area conductance for latent heat,,1,mean,,teb
-971,PACGRWAT,green roof conductance for latent heat,,1,mean,,teb
-972,PDN_RF,snow fraction on roofs,,1,mean,,teb
-973,PDN_RD,snow fraction on roads,,1,mean,,teb
-974,LCZ1,compact high-rise fraction,,1,mean,,teb
-975,LCZ2,compact midrise fraction,,1,mean,,teb
-976,LCZ3,compact low-rise fraction,,1,mean,,teb
-977,LCZ4,open high-rise fraction,,1,mean,,teb
-978,LCZ5,open midrise fraction,,1,mean,,teb
-979,LCZ6,open low-rise fraction,,1,mean,,teb
-980,LCZ7,lightweight low-rise fraction,,1,mean,,teb
-981,LCZ8,large low-rise fraction,,1,mean,,teb
-982,LCZ9,sparsely built fraction,,1,mean,,teb
-983,LCZ10,heavy industry fraction,,1,mean,,teb
-984,POPDENS,Population Density,,1,mean,,teb
-985,XRAIN,Rain rate ,kg/m2/s,1,mean,,teb
-986,XSNOW,Snow rate ,kg/m2/s,1,mean,,teb
-987,PLW_RADI,downward long-wave radiation (instant),W/m2,1,point,,teb
-988,UWFRAC,urban water fraction (water = potential evaporation from snow,,1,mean,,teb
-989,TEBRM_PS,Urban: old surface pressure,,1,mean,,teb
-2000,TPN_PRDA,Present day integrated thermal production of energy (panel),J/m2,1,mean,,teb
-2001,T_XWS_RD,road water reservoir,kg/m2,1,mean,,teb
-2002,T_XWS_RF,roof water reservoir,kg/m2,1,mean,,teb
-2003,T_SNRFWS,Urban roof: snow (& liq. water) content,kg/m2,1,mean,,teb
-2004,T_SNRFT,Urban roof: temperature 1-L,,1,mean,,teb
-2005,T_SNRFTS,Urban roof: snow surface temperature,,1,mean,,teb
-2006,T_SNRFRH,Urban roof: density,,1,mean,,teb
-2007,T_SNRFAL,Urban roof: snow surface albedo,,1,mean,,teb
-2008,T_SNRFEM,Urban roof: snow surface emissivity,,1,mean,,teb
-2009,T_SNRDWS,Urban road: snow (& liq. water) content,kg/m2,1,mean,,teb
-2010,T_SNRDT,Urban road: temperature 1-L,,1,mean,,teb
-2011,T_SNRDTS,Urban road: snow surface temperature,,1,mean,,teb
-2012,T_SNRDRH,Urban road: density,,1,mean,,teb
-2013,T_SNRDAL,Urban road: snow surface albedo,,1,mean,,teb
-2014,T_SNRDEM,Urban road: snow surface emissivity,,1,mean,,teb
-2015,T_XT_WAA,wall layer temperatures,K,109,mean,,teb
-2016,T_XT_WAB,wall layer temperatures,K,109,mean,,teb
-2017,T_XT_CAN,canyon air temperature,K,1,mean,,teb
-2018,T_XQ_CAN,canyon air specific humidity (kg/kg),1,1,mean,husscan,teb
-2019,T_XT_BLD,soil layer temperatures under buildings,K,109,mean,,teb
-2020,T_XT_RD,soil layer temperatures under roads,K,109,mean,,teb
-2021,T_XT_RF,roof layer temperatures,K,109,mean,tsroof,teb
-2022,HM_XWRD,soil volumetric water content profile (under roads),m**3/m**3,109,mean,,teb
-2023,HM_XWIRD,soil liquid water equivalent volumetric ice content profile (under roads),m**3/m**3,109,mean,,teb
-2024,HM_XWBD,soil volumetric water content profile (under buildings),m**3/m**3,109,mean,,teb
-2025,HM_XWIBD,soil liquid water equivalent volumetric ice content profile (under buildings),m**3/m**3,109,mean,,teb
-2026,B_XT_WI1,Indoor window temperature 1 ,K,1,mean,,teb
-2027,B_XT_WI2,Indoor window temperature 2 ,K,1,mean,,teb
-2028,B_XTIBLD,building interior temperature,K,109,mean,,teb
-2029,B_XQIBLD,building interior temperature,K,109,mean,,teb
-2030,B_XT_FLR,floor layer temperatures,K,109,mean,,teb
-2031,B_XT_MAS,Air cooled building internal th. mass temperature,K,109,mean,,teb
-2032,T2UC,2-meter temperature based on urban canyon approach,K,105,mean,tascan,teb
-2033,T2UCMIN,2-meter temperature minimum based on urban canyon approach,,105,mean,,teb
-2034,T2UCMAX,2-meter temperature maximum based on urban canyon approach,,105,mean,,teb
-2035,T2UCI,2-meter instant temperature based on urban canyon approach,K,105,point,tascan,teb
-551,SNH,snow depth,m,1,mean,snd,atmos
-552,CVS,snow cover fraction,1,1,mean,snc,atmos
+code,variable,description,units,layer,time_cell_method,cf_name,module,positive
+1,WS1,soil wetness of layer 1,m,1.0,mean,,atmos,
+2,WS2,soil wetness of layer 2,m,1.0,mean,,atmos,
+3,WS3,soil wetness of layer 3,m,1.0,mean,,atmos,
+4,WS4,soil wetness of layer 4,m,1.0,mean,,atmos,
+5,WS5,soil wetness of layer 5,m,1.0,mean,,atmos,
+6,DZR,Rooting depth,m,1.0,mean,,atmos,
+7,DZS,Soil depth until bedrock derived from textures,m,1.0,mean,,atmos,
+8,FKSAT,Saturated hydraulic conductivity (Clapp and Hornberger),m/s,1.0,mean,,atmos,
+9,FMPOT,Matrix potential,m,1.0,mean,,atmos,
+10,BCLAPP,Exponent b in Clapp and Hornberger,,1.0,mean,,atmos,
+11,VPOR,Volumetric soil porosity,m/m,1.0,mean,,atmos,
+12,ETRANS,transpiration at the surface,mm,1.0,mean,tran,atmos,
+13,EBSOIL,Bare soil evaporation at the surface,mm,1.0,mean,evspsblsoi,atmos,
+14,FTKVM,turbulent transfer coefficient of momentum in the atmosphere,,109.0,mean,,atmos,
+15,FTKVH,turbulent transfer coefficient of heat in the atmosphere,,109.0,mean,,atmos,
+16,TGLAC1,GLACIER: Temperature of upper ice layer,K,1.0,mean,,atmos,
+17,TGLAC2,GLACIER: Temperature of lower ice layer,K,1.0,mean,,atmos,
+18,GLD,GLACIER: Ice thickness,m w.e.,1.0,mean,,atmos,
+19,GLRUN,GLACIER: Surface runoff originating runoff from glaciated fraction (reference area: total land area),mm,1.0,mean,,atmos,
+20,GLDRAIN,GLACIER: Drainage originating from glaciated fraction (reference area: total land area),mm,1.0,mean,,atmos,
+21,GLACIER,GLACIER: Fractional glacier cover,,1.0,mean,,atmos,
+22,TD3G,GLACIER: Soil temperature of glaciated fraction (1st layer),K,1.0,mean,,atmos,
+23,TD4G,GLACIER: Soil temperature of glaciated fraction (2nd layer),K,1.0,mean,,atmos,
+24,TD5G,GLACIER: Soil temperature of glaciated fraction (3rd layer),K,1.0,mean,,atmos,
+25,TDG,GLACIER: Soil temperature of glaciated fraction (4th layer),K,1.0,mean,,atmos,
+26,TDCLG,GLACIER: Soil temperature of glaciated fraction (5th layer),K,1.0,mean,,atmos,
+27,WI3G,GLACIER: Fraction of frozen soil of glaciated fraction (1st layer),,1.0,mean,,atmos,
+28,WI4G,GLACIER: Fraction of frozen soil of glaciated fraction (2nd layer),,1.0,mean,,atmos,
+29,WI5G,GLACIER: Fraction of frozen soil of glaciated fraction (3rd layer),,1.0,mean,,atmos,
+30,WIG,GLACIER: Fraction of frozen soil of glaciated fraction (4th layer),,1.0,mean,,atmos,
+31,WICLG,GLACIER: Fraction of frozen soil of glaciated fraction (5th layer),,1.0,mean,,atmos,
+32,GLACCI,GLACIER: Ice accumulation on glaciated fraction (reference area: glaciated area),mm w.e.,1.0,mean,,atmos,
+33,GLABLI,GLACIER: Ice ablation on glaciated fraction (reference area: glaciated area),mm w.e.,1.0,mean,,atmos,
+34,GLACCS,GLACIER: Snow accumulation on glaciated fraction (reference area: glaciated area),mm w.e.,1.0,mean,,atmos,
+35,GLABLS,GLACIER: Snow ablation on glaciated fraction (reference area: glaciated area),mm w.e.,1.0,mean,,atmos,
+36,GLVOL,GLACIER: Ice volume,m³ w.e.,1.0,mean,,atmos,
+37,SRADSGI,GLACIER: Surface incoming solar radiation on glaciated fraction,W/m²,1.0,mean,,atmos,
+38,SRADSGO,GLACIER: Surface outgoing solar radiation on glaciated fraction,W/m²,1.0,mean,,atmos,
+49,TRSOL,effective transmissivity,,1.0,mean,,atmos,
+51,EMTEF,,,1.0,mean,,atmos,
+52,TRSOF,,,1.0,mean,,atmos,
+53,DRAIN,drainage (part of 160),mm,1.0,mean,,atmos,
+54,TSL,surface temperature (land),K,1.0,mean,,atmos,
+55,TSW,surface temperature (water),K,1.0,mean,,atmos,
+56,TSI,surface temperature (ice),K,1.0,mean,,atmos,
+57,USTRL,surface u-stress (land),Pa,1.0,mean,,atmos,
+58,USTRW,surface u-stress (water),Pa,1.0,mean,,atmos,
+59,USTRI,surface u-stress (ice),Pa,1.0,mean,,atmos,
+60,VSTRL,surface v-stress (land),Pa,1.0,mean,,atmos,
+61,VSTRW,surface v-stress (water),Pa,1.0,mean,,atmos,
+62,VSTRI,surface v-stress (ice),Pa,1.0,mean,,atmos,
+63,EVAPL,surface evaporation (land),mm,1.0,mean,,atmos,
+64,EVAPW,surface evaporation (water),mm,1.0,mean,,atmos,
+65,EVAPI,surface evaporation (ice),mm,1.0,mean,,atmos,
+66,AHFLL,surface latent heat flux (land),W/m²,1.0,mean,,atmos,
+67,AHFLW,surface latent heat flux (water),W/m²,1.0,mean,,atmos,
+68,AHFLI,surface latent heat flux (ice),W/m²,1.0,mean,,atmos,
+69,AHFSL,surface sensible heat flux (land),W/m²,1.0,mean,,atmos,
+70,AHFSW,surface sensible heat flux (water),W/m²,1.0,mean,,atmos,
+71,AHFSI,surface sensible heat flux (ice),W/m²,1.0,mean,,atmos,
+72,AZ0L,surface roughness length (land),m,1.0,mean,,atmos,
+73,AZ0W,surface roughness length (water),m,1.0,mean,,atmos,
+74,AZ0I,surface roughness length (ice),m,1.0,mean,,atmos,
+75,ALSOL,surface albedo (land),1,1.0,mean,,atmos,
+76,ALSOW,surface albedo (water),1,1.0,mean,,atmos,
+77,ALSOI,surface albedo (ice),1,1.0,mean,,atmos,
+81,TMCHL,turbulent transfer coefficient of heat at the surface (land),,1.0,mean,,atmos,
+82,TMCHW,turbulent transfer coefficient of heat at the surface (water),,1.0,mean,,atmos,
+83,TMCHI,turbulent transfer coefficient of heat at the surface (ice),,1.0,mean,,atmos,
+84,QDBL,specific humidity surface (land),kg/kg,1.0,mean,,atmos,
+85,QDBW,specific humidity surface (water),kg/kg,1.0,mean,,atmos,
+86,QDBI,specific humidity surface (ice),kg/kg,1.0,mean,,atmos,
+87,BFLHSL,surface sensible heat flux (land) (= 69),W/m²,1.0,mean,,atmos,
+88,BFLHSW,surface sensible heat flux (water) (= 70),W/m²,1.0,mean,,atmos,
+89,BFLHSI,surface sensible heat flux (ice) (= 71),W/m²,1.0,mean,,atmos,
+90,BFLQDSL,surface latent heat flux (land) (= 66),W/m²,1.0,mean,,atmos,
+91,BFLQDSW,surface latent heat flux (water) (= 67),W/m²,1.0,mean,,atmos,
+92,BFLQDSI,surface latent heat flux (ice) (= 68),W/m²,1.0,mean,,atmos,
+93,AHFICE,sea-ice: conductive heat,W/m,1.0,mean,,atmos,
+94,QRES,residual heat flux for melting sea ice,W/m²,1.0,mean,,atmos,
+95,SRFL,net solar radiative flux at the surface,,1.0,mean,,atmos,
+96,QDBOXS,horizontal transport of water vapour,kg/m²,1.0,mean,,atmos,
+97,QWBOXS,horizontal transport of cloud water,kg/m²,1.0,mean,,atmos,
+98,EKBOXS,horizontal transport of kinetic energy,(3600*J)/m²,1.0,mean,,atmos,
+99,FHBOXS,horizontal transport of sensible heat,(3600*J)/m²,1.0,mean,,atmos,
+100,FIBOXS,horizontal transport of potential energy,(3600*J)/m²,1.0,mean,,atmos,
+101,TLAMBDA,heat conductivity of dry soil,W/(K*m),1.0,mean,,atmos,
+103,DLAMBDA,parameter for increasing the heat conductivity of the soil due to soil moisture (TLAMBDA+DLAMBDA gives the heat conductivity of saturated soil),,1.0,mean,,atmos,
+104,PORVOL,pore volume,,1.0,mean,,atmos,
+105,FCAP,field capacity of soil,m³/m³,1.0,mean,,atmos,
+106,WI3,fraction of frozen soil (layers analogous soil temp.),,1.0,mean,,atmos,
+107,WI4,fraction of frozen soil (layers analogous soil temp.),,1.0,mean,,atmos,
+108,WI5,fraction of frozen soil (layers analogous soil temp.),,1.0,mean,,atmos,
+109,WI,fraction of frozen soil (layers analogous soil temp.),,1.0,mean,,atmos,
+110,WICL,fraction of frozen soil (layers analogous soil temp.),,1.0,mean,,atmos,
+111,TSGECH,GLACIER: Surface temperature of glaciated fraction,K,1.0,mean,,atmos,
+112,QDB,specific humidity surface,kg/kg,1.0,mean,,atmos,
+113,AZ0G,GLACIER: Surface roughness length of glaciated fraction,m,1.0,mean,,atmos,
+114,TMCHG,GLACIER: Turbulent exchange coefficient for sensible and latent heat on glaciated fraction,,1.0,mean,,atmos,
+115,AHFSG,GLACIER: Sensible heat flux on glaciated fraction (VDIFF),W/m²,1.0,mean,,atmos,
+116,BFLHSG,GLACIER: Sensible heat flux on glaciated fraction (PROGEXP),W/m²,1.0,mean,,atmos,
+117,BFLQDSG,GLACIER: Latent heat flux on glaciated fraction (PROGEXP),W/m²,1.0,mean,,atmos,
+118,EVAPG,GLACIER: Evaporation on glaciated fraction (reference area: glaciated area),mm,1.0,mean,,atmos,
+119,QDBG,GLACIER: Specific humidity over glaciated fraction,kg/kg,1.0,mean,,atmos,
+120,USTRG,GLACIER: Surface u-stress over glaciated fraction,Pa*s,1.0,mean,,atmos,
+121,VSTRG,GLACIER: Surface v-stress over glaciated fraction,Pa*s,1.0,mean,,atmos,
+122,ALSOG,GLACIER: Surface albedo of glaciated fraction,,1.0,mean,,atmos,
+123,SNG,GLACIER: Snow depth on glaciated fraction,m w.e.,1.0,mean,,atmos,
+124,TSNG,GLACIER: Snow temperature on glaciated fraction,K,1.0,mean,,atmos,
+125,SNAGEL,GLACIER: Snow age on non-glaciated fraction,days,1.0,mean,,atmos,
+126,SNAGEG,GLACIER: Snow age on glaciated fraction,days,1.0,mean,,atmos,
+127,SNMDL,GLACIER: Mean snow depth on non-glaciated fraction during SNAGEL,m w.e.,1.0,mean,,atmos,
+128,SNMDG,GLACIER: Mean snow depth on glaciated fraction during SNAGEG,m w.e.,1.0,mean,,atmos,
+129,FIB,surface geopotential (orography),m,1.0,,orog,atmos,
+130,T,temperature,K,110.0,point,ta,atmos,
+131,U,u-velocity,m/s,110.0,point,ua,atmos,
+132,V,v-velocity,m/s,110.0,point,va,atmos,
+133,QD,specific humidity,kg/kg,110.0,point,hus,atmos,
+134,PS,Surface pressure,Pa,1.0,mean,ps,atmos,
+135,OMEGA,Vertical velocity,Pa/s,110.0,mean,,atmos,
+136,,,,1.0,mean,,atmos,
+137,,,,1.0,mean,,atmos,
+138,,,,1.0,mean,,atmos,
+139,TS,surface temperature (mean over gridbox),K,1.0,mean,ts,atmos,
+140,WS,soil wetness,m,1.0,mean,mrso,atmos,
+141,SN,snow depth,g mm-2,1.0,mean,snw,atmos,
+142,APRL,large scale precipitation,mm,1.0,mean,,atmos,
+143,APRC,convective precipitation,mm,1.0,mean,prc,atmos,
+144,APRS,snow fall,mm,1.0,mean,prsn,atmos,
+145,VDIS,boundary layer dissipation (accumulated),W/m²,1.0,mean,,atmos,
+146,AHFS,surface sensible heat flux,W m-2,1.0,mean,,atmos,
+147,AHFL,surface latent heat flux,W m-2,1.0,mean,,atmos,
+148,,,,1.0,mean,,atmos,
+149,,,,1.0,mean,,atmos,
+150,,,,1.0,mean,,atmos,
+151,PSRED,mean sea level pressure,Pa,1.0,mean,psl,atmos,
+152,,,,1.0,mean,,atmos,
+153,QW,liquid water content,kg/kg,110.0,mean,,atmos,
+154,,,,1.0,mean,,atmos,
+155,,,,1.0,mean,,atmos,
+156,FI,geopotential height,m,109.0,point,zg,atmos,
+157,RELHUM,relative humidity (only an output variable of the pressure interpolation routine as 'REL HUM ' in the namelist),%,110.0,point,hur,atmos,
+158,,,,1.0,mean,,atmos,
+159,USTAR3,TKE for ocean mixed layer (accumulated),(m**3/s**3)*s,1.0,mean,,atmos,
+160,RUNOFF,total runoff (surface runoff PLUS drainage !!),mm,1.0,mean,mrro,atmos,
+161,,,,1.0,mean,,atmos,
+162,ACLC,cloud cover (see also 223),1,110.0,mean,,atmos,
+163,ACLCV,total cloud cover (see also 164),1,1.0,mean,,atmos,
+164,ACLCOV,total cloud cover,1,1.0,mean,clt,atmos,
+165,U10,10m u-velocity,m/s,1.0,mean,,atmos,
+166,V10,10m v-velocity,m/s,1.0,mean,,atmos,
+167,TEMP2,2m temperature,K,1.0,mean,tas,atmos,
+367,TEMPI2,2m temperature instantaneous,K,1.0,point,tas,atmos,
+168,DEW2,2m dew point temperature,K,1.0,mean,,atmos,
+169,TSURF,surface temperature (land) (see also 54),K,1.0,mean,,atmos,
+170,TD,deep soil temperature,K,1.0,mean,,atmos,
+171,WIND10,10m windspeed,m/s,1.0,mean,sfcWind,atmos,
+371,WINDI10,10m windspeed instantaneous,m/s,1.0,point,sfcWind,atmos,
+172,BLA,land sea mask,1,1.0,,sftlf,atmos,
+173,AZ0,surface roughness length,m,1.0,mean,z0,atmos,
+174,ALB,surface background albedo,1,1.0,mean,,atmos,
+175,ALBEDO,surface albedo,1,1.0,mean,albedo,atmos,
+176,SRADS,net surface solar radiation,W/m²,1.0,mean,rsntds,atmos,
+177,TRADS,net surface thermal radiation,W/m²,1.0,mean,rlntds,atmos,
+178,SRAD0,net top solar radiation,W/m²,1.0,mean,rsntdt,atmos,
+179,TRAD0,top thermal radiation (OLR),W/m²,1.0,mean,rlut,atmos,down
+180,USTR,surface u-stress,Pa,1.0,mean,tauu,atmos,down
+181,VSTR,surface v-stress,Pa,1.0,mean,tauv,atmos,down
+182,EVAP,surface evaporation,mm,1.0,mean,evspsbl,atmos,
+183,TDCL,soil temperature 5.700m thickness,K,1.0,mean,,atmos,
+184,,,,1.0,mean,,atmos,
+185,SRAFS,net surf. solar radiation (clear sky),W/m²,1.0,mean,,atmos,
+186,TRAFS,net surf. thermal radiation (clear sky),W/m²,1.0,mean,,atmos,
+187,SRAF0,net top solar radiation (clear sky),W/m²,1.0,mean,,atmos,
+188,TRAF0,net top thermal radiation (clear sky),W/m²,1.0,mean,,atmos,
+189,SCLFS,surface solar cloud forcing,W/m²,1.0,mean,,atmos,
+190,TCLFS,surface thermal cloud forcing,W/m²,1.0,mean,tcflfs,atmos,
+191,SCLF0,top solar cloud forcing,W/m²,1.0,mean,,atmos,
+192,TCLF0,top thermal cloud forcing,W/m²,1.0,mean,tcflft,atmos,
+193,,,,1.0,mean,,atmos,
+194,WL,skin reservoir content,m,1.0,mean,,atmos,
+195,USTRGW,u-gravity wave stress,Pa,1.0,mean,,atmos,
+196,VSTRGW,v-gravity wave stress,Pa,1.0,mean,,atmos,
+197,VDISGW,gravity wave dissipation,W/m²,1.0,mean,,atmos,
+198,VGRAT,vegetation ratio,,1.0,mean,,atmos,
+199,VAROR,orographic variance (for surface runoff),,1.0,mean,,atmos,
+200,VLT,leaf area index,m²/m²,1.0,mean,,atmos,
+201,T2MAX,maximum 2m-temperature,K,1.0,max,tasmax,atmos,
+202,T2MIN,minimum 2m-temperature,K,1.0,min,tasmin,atmos,
+203,SRAD0U,top solar radiation upward,W/m²,1.0,mean,rsut,atmos,down
+204,SRADSU,surface solar radiation upward,W/m²,1.0,mean,rsus,atmos,down
+205,TRADSU,surface thermal radiation upward,W/m²,1.0,mean,rlus,atmos,down
+206,TSN,snow temperature (see description below),K,1.0,mean,,atmos,
+207,TD3,soil temperature 0.065m thickness,K,1.0,mean,,atmos,
+208,TD4,soil temperature 0.254m thickness,K,1.0,mean,,atmos,
+209,TD5,soil temperature 0.913m thickness,K,1.0,mean,,atmos,
+210,SEAICE,sea ice cover,1,1.0,mean,,atmos,
+211,SICED,sea ice depth,m,1.0,mean,,atmos,
+212,FOREST,vegetation type,,1.0,mean,,atmos,
+213,TEFF,(effective) sea-ice skin temperature,K,1.0,mean,,atmos,
+214,TSMAX,maximum surface temperature,K,1.0,max,,atmos,
+215,TSMIN,minimum surface temperature,K,1.0,min,,atmos,
+216,WIMAX,maximum 10m-wind speed (w/o gusts),m/s,1.0,max,sfcWindmax,atmos,
+217,TOPMAX,maximum height of convective cloud tops,Pa,1.0,max,,atmos,
+218,SNMEL,snow melt,mm,1.0,mean,snm,atmos,
+219,,,,1.0,mean,,atmos,
+220,TSLIN,land: residual surface heat budget sea-ice: conductive heat flux,W/m²,1.0,mean,,atmos,
+221,DSNAC,snow depth change,mm,1.0,mean,,atmos,
+222,EMTER,effective emissivity,,1.0,mean,,atmos,
+223,ACLCAC,cloud cover,1,110.0,mean,clh,atmos,
+224,TKE,turbulent kinetic energy,,110.0,mean,,atmos,
+225,,,,1.0,mean,,atmos,
+226,FAO,FAO data set (soil data flags),0...6.,1.0,mean,,atmos,
+227,RGCGN,heat capacity of soil,,1.0,mean,,atmos,
+228,,,,1.0,mean,,atmos,
+229,WSMX,field capacity of soil,m³/m³,1.0,mean,mrsofc,atmos,
+230,QVI,vertically integrated specific humidity,kg/m²,1.0,mean,prw,atmos,
+231,ALWCVI,vertically integrated liquid water cont.,kg/m²,1.0,mean,clwvi,atmos,
+232,GLAC,glacier mask (0.: no,1.: yes),1.0,mean,,atmos,
+233,,,,1.0,mean,,atmos,
+234,EVAPM,surface evaporation,mm,1.0,mean,,atmos,
+251,,Kevin Sieck,BMI,1.0,mean,,atmos,
+252,SNMELG,GLACIER: Snow melt on glaciated fraction (reference area: total land area),mm w.e.,1.0,mean,,atmos,
+253,PHI,latitude in real coordinates,deg. N,1.0,,,atmos,
+254,RLA,longitude in real coordinates,deg. E,1.0,,,atmos,
+255,GLIMELT,GLACIER: Ice melt on glaciated fraction (reference area: total land area),mm w.e.,1.0,mean,,atmos,
+256,TRADSGI,GLACIER: Surface incoming thermal radiation on glaciated fraction,W/m²,1.0,mean,,atmos,
+257,TRADSGO,GLACIER: Surface outgoing thermal radiation on glaciated fraction,W/m²,1.0,mean,,atmos,
+258,AHFLG,GLACIER: Latent heat flux on glaciated fraction (VDIFF),W/m²,1.0,mean,,atmos,
+259,GLDLAST,GLACIER: Ice thickness after last area adjustment (IGLAAM=2),m w.e.,1.0,mean,,atmos,
+260,APRT,Total Precipitation,mm,1.0,mean,pr,atmos,
+261,AHUM2,2m absolute humidity,kg/m**3,1.0,mean,,atmos,
+262,SRADG,global radiation,W/m**2,1.0,mean,,atmos,
+265,U10ER,10m u-velocity derotated,m/s,105.0,mean,uas,atmos,
+266,V10ER,10m v-velocity derotated,m/s,105.0,mean,vas,atmos,
+374,UI10ER,10m u-velocity derotated instantaneous,m/s,105.0,point,uas,atmos,
+375,VI10ER,10m v-velocity derotated instantaneous,m/s,105.0,point,vas,atmos,
+380,U100ER,100m u-velocity derotated,m/s,105.0,mean,ua100m,atmos,
+381,V100ER,100m v-velocity derotated,m/s,105.0,mean,va100m,atmos,
+382,UI100ER,100m u-velocity derotated instantaneous,m/s,105.0,point,ua100m,atmos,
+383,VI100ER,100m v-velocity derotated instantaneous,m/s,105.0,point,va100m,atmos,
+378,UI100,100m u-velocity instantaneous,m/s,105.0,point,ua100m,atmos,
+379,VI100,100m v-velocity instantaneous,m/s,105.0,point,va100m,atmos,
+376,U100,100m u-velocity,m/s,105.0,mean,ua100m,atmos,
+377,V100,100m v-velocity,m/s,105.0,mean,va100m,atmos,
+368,UI10,10m u-velocity instantaneous,m/s,105.0,point,,atmos,
+369,VI10,10m v-velocity instantaneous,m/s,105.0,point,,atmos,
+271,GHPBL,height of the planetary boundary layer,m,1.0,mean,zmla,atmos,
+272,BETA,,,1.0,mean,,atmos,
+273,WMINLOK,,,1.0,min,,atmos,
+274,WMAXLOK,,,1.0,max,,atmos,
+275,VBM10M,maximum of the expected gust velocity near the surface,m/s,1.0,max,wsgsmax,atmos,
+276,CAPE,convective available potential energy,J/kg,1.0,mean,cape,atmos,
+281,PINT,non-hydrostatic pressure,,110.0,mean,,atmos,
+282,DWDT,non-hydrostatic acceleration,,110.0,mean,,atmos,
+283,W,non-hydrostatic vertical velocity,,109.0,mean,,atmos,
+284,SVHCAP,vol. heat capacity of dry soil,J/(m³*K),1.0,mean,,atmos,
+285,SLAMBDA,heat conductivity of dry soil,J/(m³*K),1.0,mean,,atmos,
+287,QJX,zonal vertically integrated moisture transport,kg m/m² s,1.0,mean,,atmos,
+288,QJY,meridional vertically integrated moisture transport,kg m/m² s,1.0,mean,,atmos,
+296,ADVECR,,kg/m²*s,110.0,mean,,atmos,
+297,ADVECS,,kg/m²*s,110.0,mean,,atmos,
+298,ADVELR,,kg/m²*s,110.0,mean,,atmos,
+299,ADVELS,,kg/m²*s,110.0,mean,,atmos,
+301,ESNOW,evaporation over snow at the surface,mm,1.0,mean,,atmos,
+302,ESKIN,Evaporation from skin reservoir at the surface,mm,1.0,mean,,atmos,
+303,ERES,,,1.0,mean,,atmos,
+317,VFC,volumetric soil field capacity,m/m,1.0,mean,,atmos,
+318,VPWP,volumetric soil permanent wilting point,m/m,1.0,mean,,atmos,
+319,SPSI,soil pore size distribution index, ,1.0,mean,,atmos,
+334,QI,cloud ice,kg/kg,110.0,mean,,atmos,
+336,QIVI,vertically integrated cloud ice,kg/m²,1.0,mean,clivi,atmos,
+337,QIBOXS,horizontal transport of cloud ice,kg/m²,1.0,mean,,atmos,
+416,QDB2,2m specific humidity,kg/kg,1.0,mean,huss,atmos,
+417,VAP2,2m vapour pressure,Pa,1.0,mean,,atmos,
+432,PTEMP,potential temperature (not an output variable),K,110.0,mean,,atmos,
+433,RPR,warm cloud rain production,?,110.0,mean,,atmos,
+434,EVPAC,,,110.0,mean,,atmos,
+435,XLEVAC,,,110.0,mean,,atmos,
+436,XIEVAC,,,110.0,mean,,atmos,
+437,DEPAC,i found a description,,110.0,mean,,atmos,
+438,SUBAC,,,110.0,mean,,atmos,
+439,XISUBAC,,,110.0,mean,,atmos,
+440,SMLTAC,,,110.0,mean,,atmos,
+441,IMLTAC,,,110.0,mean,,atmos,
+442,XIMLTAC,,,110.0,mean,,atmos,
+443,FRLAC,,,110.0,mean,,atmos,
+444,SPRAC,,,110.0,mean,,atmos,
+446,WINDDIR,wind direction in 10m,°,1.0,mean,,atmos,
+447,RELHUM2,relative humidity in 2m,%,1.0,mean,hurs,atmos,
+448,SACL1AC,,,110.0,mean,,atmos,
+449,SACL2AC,,,110.0,mean,,atmos,
+450,RAC1AC,,,110.0,mean,,atmos,
+451,RAC2AC,,,110.0,mean,,atmos,
+452,SAUTAC,,,110.0,mean,,atmos,
+453,RAUTAC,,,110.0,mean,,atmos,
+454,CLCP1LC,,,110.0,mean,,atmos,
+455,CNDAC,,,110.0,mean,,atmos,
+456,BFLHS,surface sensible heat flux (=146),W m-2,1.0,mean,hfss,atmos,down
+457,BFLQDS,surface latent heat flux (=147),W m-2,1.0,mean,hfls,atmos,down
+458,WBT,wet bulb temperature (not a model variable),K,1.0,mean,,atmos,
+459,SACI1AC,,,110.0,mean,,atmos,
+460,SACI2AC,,,110.0,mean,,atmos,
+461,TMCM,turbulent transfer coefficient of momentum at the surface,,1.0,mean,,atmos,
+462,TMCH,turbulent transfer coefficient of heat at the surface,,1.0,mean,,atmos,
+463,SEDAC,,,110.0,mean,,atmos,
+464,TTELSAC,,,110.0,mean,,atmos,
+465,QTELSAC,,,110.0,mean,,atmos,
+466,XTELSAC,,,110.0,mean,,atmos,
+467,XITELSAC,,,110.0,mean,,atmos,
+468,TTECAC,,,110.0,mean,,atmos,
+469,QTECAC,,,110.0,mean,,atmos,
+496,RAIN,rain water content,kg/kg,1.0,mean,,atmos,
+497,SNOW,snow content,kg/kg,1.0,mean,,atmos,
+372,WIND100,100m windspeed,m/s,1.0,mean,,atmos,
+373,WINDI100,100m windspeed instantaneous,m/s,1.0,point,,atmos,
+571,SUND,sunshine duration,s,1.0,mean,sund,atmos,
+614,PHI,latitude in real coordinates,deg. N,1.0,,,atmos,
+615,RLA,longitude in real coordinates,deg. E,1.0,,,atmos,
+470,FLTMWAT,mean temperature of the water column,K,1.0,mean,,flake,
+471,FLTMIX,mixed-layer temperature,K,1.0,mean,,flake,
+472,FLTWBSED,temperature at the water-bottom sediment interface,K,1.0,mean,,flake,
+473,FLTULSED,temperature at the bottom of the upper layer of the sediments,K,1.0,mean,,flake,
+474,FLSHF,shape factor (thermocline),,1.0,mean,,flake,
+475,FLHSN,snow thickness,m,1.0,mean,,flake,
+476,FLHICE,ice thickness,m,1.0,mean,,flake,
+477,FLHMIX,thickness of the mixed-layer,m,1.0,mean,,flake,
+478,FLHULBS,thickness of the upper layer of bottom sediments,m,1.0,mean,,flake,
+479,FLTSN,temperature at the air-snow interface,K,1.0,mean,,flake,
+480,FLTICE,temperature at the snow-ice or air-ice interface,K,1.0,mean,,flake,
+481,QDBFL,surface specific humidity over lake fraction,kg/kg,1.0,mean,,flake,
+482,TSFLECH,surface temperature over lakes,K,1.0,mean,,flake,
+483,BFLHSFL,surface sensible heat flux on lake fraction (PROGEXP),W/m²,1.0,mean,,flake,
+484,AHFSFL,surface sensible heat flux on lake fraction (VDIFF),W/m²,1.0,mean,,flake,
+485,BFLQDSFL,surface latent heat flux on lake fraction (PROGEXP),W/m²,1.0,mean,,flake,
+486,AHFLFL,surface latent heat flux on lake fraction (VDIFF),W/m²,1.0,mean,,flake,
+487,AZ0FL,surface roughness length of lake fraction,m,1.0,mean,,flake,
+488,ALSOFL,surface albedo of lake fraction,,1.0,mean,,flake,
+489,USTRFL,surface u-stress over lake fraction,Pa,1.0,mean,,flake,
+490,VSTRFL,surface v-stress over lake fraction,Pa,1.0,mean,,flake,
+491,EVAPFL,surface evaporation on lake fraction,mm,1.0,mean,,flake,
+492,TMCHFL,turbulent transfer coefficient of heat at the surface on lake fraction,,1.0,mean,,flake,
+493,FLFRA,lake fraction,,,mean,sftlaf,flake,
+494,FLADE,lake depth,m,,mean,,flake,
+495,EMTERFL,effective emissivity of lakes,,,mean,,flake,
+900,URBFR,urban fraction (of the land fraction),,1.0,mean,sfturf,teb,
+1731,ZVEG,surface roughness length due to vegetation,,1.0,mean,,teb,
+901,QDBUR,specific humidity surface (urban),,1.0,mean,,teb,
+902,TSURECH,surface temperature (urban) ,K,1.0,mean,,teb,
+903,BFLHSUR,surface sensible heat flux (progexp) ,W/m2,1.0,mean,,teb,
+904,AHFSUR,surface sensible heat flux (vdiff) ,W/m2,1.0,mean,,teb,
+905,BFLQDSUR,surface latent heat flux (progexp) ,W/m2,1.0,mean,,teb,
+906,AHFLUR,surface latent heat flux (vdiff) ,W/m2,1.0,mean,,teb,
+907,AZ0UR,surface roughness length ,m,1.0,mean,,teb,
+908,USTRUR,surface u-stress ,Pa,1.0,mean,,teb,
+909,VSTRUR,surface v-stress ,Pa,1.0,mean,,teb,
+910,EVAPUR,surface evaporation ,mm,1.0,mean,,teb,
+911,TMCHUR,turb. trans. coef. of heat at the surf. ,,1.0,mean,,teb,
+912,ALSOUR,VIS albedo (urban),,1.0,mean,,teb,
+913,ALSONUR,NIR albedo (urban),,1.0,mean,,teb,
+914,PTSRADGD,skin surface temperature of urban low vegetation (K),K,1.0,mean,,teb,
+915,PTSRADGR,skin surface temperature of urban green roofs (K),K,1.0,mean,,teb,
+916,PSCASWSK,Diff sol rad from sky received by people (inc attenuation by trees),,1.0,mean,,teb,
+917,PLWRADSK,IR rad from sky received by people (inc attenuation by trees),,1.0,mean,,teb,
+918,PSCASGRD,Diffusive downwelling solar radiation at ground level,W/m2,1.0,mean,,teb,
+919,PSCASGRU,Diffusive upwelling solar radiation at ground level,W/m2,1.0,mean,,teb,
+920,PSCASGRH,Diffusive horizontal solar radiation at ground level,W/m2,1.0,mean,,teb,
+921,PLWGRDOW,Downwelling longwave radiation at ground level,W/m2,1.0,mean,,teb,
+922,PLWGRHOR,Longwave radiation in horizontal direction at ground level,W/m2,1.0,mean,,teb,
+923,PLAD_CAN,vertical profile of Leaf Area Density on canopy grid,,1.0,mean,,teb,
+924,PDH_HVEG,sensible heat flux from trees discretized on canopy grid,,1.0,mean,,teb,
+925,PDLEHVEG,sensible heat flux from trees discretized on canopy grid,,1.0,mean,,teb,
+926,PLEW_RF,latent heat flux over roof (snow),,1.0,mean,,teb,
+927,PLEW_RD,latent heat flux over road (snow),,1.0,mean,,teb,
+928,PRNSN_RF,net radiation over snow,,1.0,mean,,teb,
+929,PHSN_RF,sensible heat flux over snow,,1.0,mean,,teb,
+930,PLESN_RF,latent heat flux over snow,,1.0,mean,,teb,
+931,PGSN_RF,flux under the snow,,1.0,mean,,teb,
+932,PMELT_RF,snow melt,,1.0,mean,,teb,
+933,PRNSN_RD,net radiation over snow,,1.0,mean,,teb,
+934,PHSN_RD,sensible heat flux over snow,,1.0,mean,,teb,
+935,PLESN_RD,latent heat flux over snow,,1.0,mean,,teb,
+936,PGSN_RD,flux under the snow,,1.0,mean,,teb,
+937,PMELT_RD,snow melt,,1.0,mean,,teb,
+938,PRN_GRND,net radiation over ground,,1.0,mean,,teb,
+939,PH_GRND,sensible heat flux over ground,,1.0,mean,,teb,
+940,PLE_GRND,latent heat flux over ground,,1.0,mean,,teb,
+941,PGFLXGRN,flux through the ground,,1.0,mean,,teb,
+942,PRN_TWN,net radiation over town,,1.0,mean,,teb,
+943,PH_TWN,sensible heat flux over town,,1.0,mean,,teb,
+944,PHTWNSUR,sensible heat flux over town,,1.0,mean,,teb,
+945,PHTWNWAL,sensible heat flux over town,,1.0,mean,,teb,
+946,PHTWNROO,sensible heat flux over town,,1.0,mean,,teb,
+947,PLE_TWN,latent heat flux over town,,1.0,mean,,teb,
+948,PGFLXTWN,flux through the ground,,1.0,mean,,teb,
+949,PQF_TWN,anthropogenic flux,,1.0,mean,,teb,
+950,PEVAPTWN,evaporation flux,kg/m2/s,1.0,mean,,teb,
+951,PEVTWNSU,evaporation flux,kg/m2/s,1.0,mean,,teb,
+952,PEVTWNWA,evaporation flux,kg/m2/s,1.0,mean,,teb,
+953,PEVTWNRO,evaporation flux,kg/m2/s,1.0,mean,,teb,
+954,PUW_GRND,momentum flux for ground built surf,,1.0,mean,,teb,
+955,PUW_RF,momentum flux for roofs,,1.0,mean,,teb,
+956,PDUWDUGR,,,1.0,mean,,teb,
+957,PDUWDURF,,,1.0,mean,,teb,
+958,PUSTARTW,friciton velocity over town,,1.0,mean,,teb,
+959,PCD,town averaged drag coefficient,,1.0,mean,,teb,
+960,PCDN,town averaged neutral drag coefficient,,1.0,mean,,teb,
+961,PCH_TWN,town averaged heat transfer coefficient,,1.0,mean,,teb,
+962,PRI_TWN,town averaged Richardson number,,1.0,mean,,teb,
+963,PEMISTWN,town equivalent emissivity,,1.0,mean,,teb,
+964,PSAALTWN,town equivalent diffuse albedo,,1.0,mean,,teb,
+965,PRESATWN,town aerodynamical resistance,,1.0,mean,,teb,
+966,PAC_RD,road conductance,,1.0,mean,,teb,
+967,PAC_GD,green area conductance,,1.0,mean,,teb,
+968,PAC_GR,green roof conductance,,1.0,mean,,teb,
+969,PACRDWAT,road conductance for latent heat,,1.0,mean,,teb,
+970,PACGDWAT,green area conductance for latent heat,,1.0,mean,,teb,
+971,PACGRWAT,green roof conductance for latent heat,,1.0,mean,,teb,
+972,PDN_RF,snow fraction on roofs,,1.0,mean,,teb,
+973,PDN_RD,snow fraction on roads,,1.0,mean,,teb,
+974,LCZ1,compact high-rise fraction,,1.0,mean,,teb,
+975,LCZ2,compact midrise fraction,,1.0,mean,,teb,
+976,LCZ3,compact low-rise fraction,,1.0,mean,,teb,
+977,LCZ4,open high-rise fraction,,1.0,mean,,teb,
+978,LCZ5,open midrise fraction,,1.0,mean,,teb,
+979,LCZ6,open low-rise fraction,,1.0,mean,,teb,
+980,LCZ7,lightweight low-rise fraction,,1.0,mean,,teb,
+981,LCZ8,large low-rise fraction,,1.0,mean,,teb,
+982,LCZ9,sparsely built fraction,,1.0,mean,,teb,
+983,LCZ10,heavy industry fraction,,1.0,mean,,teb,
+984,POPDENS,Population Density,,1.0,mean,,teb,
+985,XRAIN,Rain rate ,kg/m2/s,1.0,mean,,teb,
+986,XSNOW,Snow rate ,kg/m2/s,1.0,mean,,teb,
+987,PLW_RADI,downward long-wave radiation (instant),W/m2,1.0,point,,teb,
+988,UWFRAC,urban water fraction (water = potential evaporation from snow,,1.0,mean,,teb,
+989,TEBRM_PS,Urban: old surface pressure,,1.0,mean,,teb,
+2000,TPN_PRDA,Present day integrated thermal production of energy (panel),J/m2,1.0,mean,,teb,
+2001,T_XWS_RD,road water reservoir,kg/m2,1.0,mean,,teb,
+2002,T_XWS_RF,roof water reservoir,kg/m2,1.0,mean,,teb,
+2003,T_SNRFWS,Urban roof: snow (& liq. water) content,kg/m2,1.0,mean,,teb,
+2004,T_SNRFT,Urban roof: temperature 1-L,,1.0,mean,,teb,
+2005,T_SNRFTS,Urban roof: snow surface temperature,,1.0,mean,,teb,
+2006,T_SNRFRH,Urban roof: density,,1.0,mean,,teb,
+2007,T_SNRFAL,Urban roof: snow surface albedo,,1.0,mean,,teb,
+2008,T_SNRFEM,Urban roof: snow surface emissivity,,1.0,mean,,teb,
+2009,T_SNRDWS,Urban road: snow (& liq. water) content,kg/m2,1.0,mean,,teb,
+2010,T_SNRDT,Urban road: temperature 1-L,,1.0,mean,,teb,
+2011,T_SNRDTS,Urban road: snow surface temperature,,1.0,mean,,teb,
+2012,T_SNRDRH,Urban road: density,,1.0,mean,,teb,
+2013,T_SNRDAL,Urban road: snow surface albedo,,1.0,mean,,teb,
+2014,T_SNRDEM,Urban road: snow surface emissivity,,1.0,mean,,teb,
+2015,T_XT_WAA,wall layer temperatures,K,109.0,mean,,teb,
+2016,T_XT_WAB,wall layer temperatures,K,109.0,mean,,teb,
+2017,T_XT_CAN,canyon air temperature,K,1.0,mean,,teb,
+2018,T_XQ_CAN,canyon air specific humidity (kg/kg),1,1.0,mean,husscan,teb,
+2019,T_XT_BLD,soil layer temperatures under buildings,K,109.0,mean,,teb,
+2020,T_XT_RD,soil layer temperatures under roads,K,109.0,mean,,teb,
+2021,T_XT_RF,roof layer temperatures,K,109.0,mean,tsroof,teb,
+2022,HM_XWRD,soil volumetric water content profile (under roads),m**3/m**3,109.0,mean,,teb,
+2023,HM_XWIRD,soil liquid water equivalent volumetric ice content profile (under roads),m**3/m**3,109.0,mean,,teb,
+2024,HM_XWBD,soil volumetric water content profile (under buildings),m**3/m**3,109.0,mean,,teb,
+2025,HM_XWIBD,soil liquid water equivalent volumetric ice content profile (under buildings),m**3/m**3,109.0,mean,,teb,
+2026,B_XT_WI1,Indoor window temperature 1 ,K,1.0,mean,,teb,
+2027,B_XT_WI2,Indoor window temperature 2 ,K,1.0,mean,,teb,
+2028,B_XTIBLD,building interior temperature,K,109.0,mean,,teb,
+2029,B_XQIBLD,building interior temperature,K,109.0,mean,,teb,
+2030,B_XT_FLR,floor layer temperatures,K,109.0,mean,,teb,
+2031,B_XT_MAS,Air cooled building internal th. mass temperature,K,109.0,mean,,teb,
+2032,T2UC,2-meter temperature based on urban canyon approach,K,105.0,mean,tascan,teb,
+2033,T2UCMIN,2-meter temperature minimum based on urban canyon approach,,105.0,mean,,teb,
+2034,T2UCMAX,2-meter temperature maximum based on urban canyon approach,,105.0,mean,,teb,
+2035,T2UCI,2-meter instant temperature based on urban canyon approach,K,105.0,point,tascan,teb,
+551,SNH,snow depth,m,1.0,mean,snd,atmos,
+552,CVS,snow cover fraction,1,1.0,mean,snc,atmos,
