@@ -452,7 +452,7 @@ code,variable,description,units,positive,layer,time_cell_method,cf_name,module
 2014,T_SNRDEM,Urban road: snow surface emissivity,,,1,mean,,teb
 2015,T_XT_WAA,wall layer temperatures,K,,109,mean,,teb
 2016,T_XT_WAB,wall layer temperatures,K,,109,mean,,teb
-2017,T_XT_CAN,canyon air temperature,K,,1,mean,tascan,teb
+2017,T_XT_CAN,canyon air temperature,K,,1,point,tascan,teb
 2018,T_XQ_CAN,canyon air specific humidity (kg/kg),1,,1,mean,husscan,teb
 2019,T_XT_BLD,soil layer temperatures under buildings,K,,109,mean,,teb
 2020,T_XT_RD,soil layer temperatures under roads,K,,109,mean,,teb
