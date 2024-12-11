@@ -341,7 +341,7 @@ code,variable,description,units,positive,layer,time_cell_method,cf_name,module
 490,VSTRFL,surface v-stress over lake fraction,Pa,,1,mean,,flake
 491,EVAPFL,surface evaporation on lake fraction,mm,,1,mean,,flake
 492,TMCHFL,turbulent transfer coefficient of heat at the surface on lake fraction,,,1,mean,,flake
-493,FLFRA,lake fraction,,,,mean,sftlaf,flake
+493,FLFRA,lake fraction,1,,,mean,sftlaf,flake
 494,FLADE,lake depth,m,,,mean,,flake
 495,EMTERFL,effective emissivity of lakes,,,,mean,,flake
 900,URBFR,urban fraction (of the land fraction),,,1,mean,sfturf,teb
