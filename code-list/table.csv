@@ -344,19 +344,19 @@ code,variable,description,units,positive,layer,time_cell_method,cf_name,module
 493,FLFRA,lake fraction,1,,,mean,sftlaf,flake
 494,FLADE,lake depth,m,,,mean,,flake
 495,EMTERFL,effective emissivity of lakes,,,,mean,,flake
-900,URBFR,urban fraction (of the land fraction),,,1,mean,sfturf,teb
+900,URBFR,urban fraction (of the land fraction),1,,1,mean,sfturf,teb
 1731,ZVEG,surface roughness length due to vegetation,,,1,mean,,teb
 901,QDBUR,specific humidity surface (urban),,,1,mean,,teb
-902,TSURECH,surface temperature (urban) ,K,,1,mean,,teb
-903,BFLHSUR,surface sensible heat flux (progexp) ,W/m2,,1,mean,,teb
-904,AHFSUR,surface sensible heat flux (vdiff) ,W/m2,,1,mean,,teb
-905,BFLQDSUR,surface latent heat flux (progexp) ,W/m2,,1,mean,,teb
-906,AHFLUR,surface latent heat flux (vdiff) ,W/m2,,1,mean,,teb
-907,AZ0UR,surface roughness length ,m,,1,mean,,teb
-908,USTRUR,surface u-stress ,Pa,,1,mean,,teb
-909,VSTRUR,surface v-stress ,Pa,,1,mean,,teb
-910,EVAPUR,surface evaporation ,mm,,1,mean,,teb
-911,TMCHUR,turb. trans. coef. of heat at the surf. ,,,1,mean,,teb
+902,TSURECH,surface temperature (urban),K,,1,mean,,teb
+903,BFLHSUR,surface sensible heat flux (progexp),W/m2,,1,mean,,teb
+904,AHFSUR,surface sensible heat flux (vdiff),W/m2,,1,mean,,teb
+905,BFLQDSUR,surface latent heat flux (progexp),W/m2,,1,mean,,teb
+906,AHFLUR,surface latent heat flux (vdiff),W/m2,,1,mean,,teb
+907,AZ0UR,surface roughness length,m,,1,mean,,teb
+908,USTRUR,surface u-stress,Pa,,1,mean,,teb
+909,VSTRUR,surface v-stress,Pa,,1,mean,,teb
+910,EVAPUR,surface evaporation,mm,,1,mean,,teb
+911,TMCHUR,turb. trans. coef. of heat at the surf.,,,1,mean,,teb
 912,ALSOUR,VIS albedo (urban),,,1,mean,,teb
 913,ALSONUR,NIR albedo (urban),,,1,mean,,teb
 914,PTSRADGD,skin surface temperature of urban low vegetation (K),K,,1,mean,,teb
