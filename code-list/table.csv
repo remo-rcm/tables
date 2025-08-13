@@ -195,7 +195,7 @@ code,variable,description,units,positive,layer,time_cell_method,cf_name,module
 207,TD3,soil temperature 0.065m thickness,K,,1,mean,,atmos
 208,TD4,soil temperature 0.254m thickness,K,,1,mean,,atmos
 209,TD5,soil temperature 0.913m thickness,K,,1,mean,,atmos
-210,SEAICE,sea ice cover,1,,1,mean,,atmos
+210,SEAICE,sea ice cover,1,,1,mean,siconca,atmos
 211,SICED,sea ice depth,m,,1,mean,,atmos
 212,FOREST,vegetation type,,,1,mean,,atmos
 213,TEFF,(effective) sea-ice skin temperature,K,,1,mean,,atmos
