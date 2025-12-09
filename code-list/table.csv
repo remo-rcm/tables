@@ -214,7 +214,7 @@ code,variable,description,units,positive,layer,time_cell_method,cf_name,module
 226,FAO,FAO data set (soil data flags),0...6.,,1,mean,,atmos
 227,RGCGN,heat capacity of soil,,,1,mean,,atmos
 228,,,,,1,mean,,atmos
-229,WSMX,field capacity of soil,m³/m³,,1,mean,mrsofc,atmos
+229,WSMX,field capacity of soil,m³/m³,,1,mean,,atmos
 230,QVI,vertically integrated specific humidity,kg/m²,,1,mean,prw,atmos
 231,ALWCVI,vertically integrated liquid water cont.,kg/m²,,1,mean,clwvi,atmos
 232,GLAC,glacier mask (0.: no,1.: yes),,1,mean,,atmos
