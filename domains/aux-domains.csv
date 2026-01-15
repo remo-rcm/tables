@@ -1,8 +1,0 @@
-region,short_name,long_name,nlon,nlat,ll_lon,ll_lat,dlon,dlat,pollon,pollat
-4,EUR+NA-11,Remo Europe + North Atlantic,649,433,18.11,-39.14,0.11,0.11,-162.0,39.25
-4,HUN-11,Hungary,301,145,360.11,-89.89,0.11,0.11,180.0,90.0
-5,SASSCAL-22,Remo Southern Africa,433,433,360.22,-89.78,0.22,0.22,180.0,90.0
-4,GAR-11,Greater Alpine Region,145,129,-14.955,-12.155,0.11,0.11,-162.0,39.25
-4,EUN-0275,EUCP Northern Europe,649,811,-9.99125,-0.20625,0.0275,0.0275,-162.0,39.25
-4,EUC-0275,EUCP Central Europe,361,401,-9.52375,-5.29375,0.0275,0.0275,-162.0,39.25
-4,SGAR-0275,Greater Alpine Region,289,271,-9.38625,-9.66625,0.0275,0.0275,-162.0,39.25
