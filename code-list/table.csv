@@ -208,7 +208,7 @@ code,variable,description,units,positive,layer,time_cell_method,cf_name,module
 220,TSLIN,land: residual surface heat budget sea-ice: conductive heat flux,W/m²,,1,mean,,atmos
 221,DSNAC,snow depth change,mm,,1,mean,,atmos
 222,EMTER,effective emissivity,,,1,mean,,atmos
-223,ACLCAC,cloud cover,1,,110,mean,clh,atmos
+223,ACLCAC,cloud cover,1,,110,mean,,atmos
 224,TKE,turbulent kinetic energy,,,110,mean,,atmos
 225,,,,,1,mean,,atmos
 226,FAO,FAO data set (soil data flags),0...6.,,1,mean,,atmos
